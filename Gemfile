@@ -41,4 +41,11 @@ gem 'spring',        group: :development
 
 # Add by Lucas
 
+# Neat by Bourbon
 gem 'neat'
+
+# Normalize
+gem 'rails-assets-normalize.css'
+
+# Assets
+gem 'rails_12factor', group: :production
