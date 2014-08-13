@@ -1,0 +1,18 @@
+// Breakpoints!
+@import 'neat-helpers';
+
+// Remove this on production
+// $visual-grid: true;
+// $visual-grid-index: front;
+
+$large-desktop: new-breakpoint(min-width 81em min-height 51em 12);
+$desktop-x: new-breakpoint(min-width 50em min-height 51em 12);
+$desktop: new-breakpoint(min-width 50em 12);
+
+$tablet: new-breakpoint(min-width 30em max-width 50em 8);
+$mobile: new-breakpoint(max-width 30em 4);
+
+$mobile-landscape: new-breakpoint(min-width 30em max-width 100em 4 orientation 'landscape' 4);
+
+$iphone-5: new-breakpoint(device-height 568px device-width 320px -webkit-min-device-pixel-ratio 2 4);
+$iphone-4: new-breakpoint(min-device-width 320px max-device-width 480px 4);
