@@ -47,5 +47,8 @@ gem 'neat'
 # Normalize
 gem 'rails-assets-normalize.css'
 
+# Viewport Units buggyfill
+gem 'rails-assets-viewport-units-buggyfill'
+
 # Assets
 gem 'rails_12factor', group: :production
