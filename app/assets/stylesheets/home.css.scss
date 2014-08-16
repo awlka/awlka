@@ -1,3 +1,53 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*------------------------------------*\
+  Home styles
+\*------------------------------------*/
+
+/*------------------------------------*\
+  Miscellaneous
+\*------------------------------------*/
+
+.hwd,
+.contact-container,
+.presentation-container {
+  background: $awlka-black;
+  color: $awlka-white;
+}
+
+
+
+/*------------------------------------*\
+  #Presentation Container
+\*------------------------------------*/
+
+.presentation-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.presentation-container__video {
+
+  @include media($mobile) {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+.awlka-logo__ {
+
+  @include media($mobile) {
+    width: 310px;
+    height: 310px;
+    margin: auto;
+  }
+
+}
+
+/*------------------------------------*\
+  #How we do
+\*------------------------------------*/
+
+.hwd-rwd__img {
+  fill: $awlka-white;
+}

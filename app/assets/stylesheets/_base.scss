@@ -2,10 +2,26 @@
   Base Styles
 \*------------------------------------*/
 
+@import 'helpers';
+
 html {
   font-family: "Open Sans", sans-serif;
+  background: $awlka-white;
 }
 
 .wrapper {
   @include outer-container;
+
+  @include media($mobile) {
+    padding: 0 em(20);
+  }
+}
+
+a {
+  color: $awlka-white;
+  text-decoration: none;
+  &:hover {
+    @include transition (all .2s ease-in-out);
+    text-decoration: underline;
+  }
 }
