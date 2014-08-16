@@ -27,15 +27,16 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background: $awlka-black;
+  border-radius: 0;
 }
 
 ::-moz-selection {
   background: $awlka-black;
-  color: $awlka-white;
+  color: $awlka-blue;
 }
 ::selection {
   background: $awlka-black;
-  color: $awlka-white;
+  color: $awlka-blue;
 }
 
 a {
