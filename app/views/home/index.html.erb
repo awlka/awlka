@@ -9,155 +9,157 @@
   </div>
 </section>
 
-<header class="main-header" role="banner">
-  <div class="wrapper">
-    <a href="#" class="main-header__logo">
-      <span class="site-logo__img">
-        <%= render 'layouts/img/awlka_logo_small' %>
-      </span>
-    </a>
+<main class="main-content">
+  <header class="main-header" role="banner">
+    <div class="wrapper">
+      <a href="#" class="main-header__logo">
+        <span class="site-logo__img">
+          <%= render 'layouts/img/awlka_logo_small' %>
+        </span>
+      </a>
 
-    <nav class="site-nav">
-      <ul class="site-nav__list">
-        <li class="site-nav__item"><a href="#" class="site-nav__link"><span>O que fazemos</span></a></li>
-        <li class="site-nav__item"><a href="#" class="site-nav__link"><span>Como fazemos</span></a></li>
-        <li class="site-nav__item"><a href="#" class="site-nav__link"><span>Portfólio</span></a></li>
-        <li class="site-nav__item"><a href="#" class="site-nav__link"><span>Contato</span></a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><span>O que fazemos</span></a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><span>Como fazemos</span></a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><span>Portfólio</span></a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><span>Contato</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<section class="wwd">
+  <section class="wwd wwd-container section-container">
 
-  <div class="wrapper">
-    <h2 class="section-title wwd-title">O que fazemos</h2>
-    <p>Auxiliamos através de ferramentas web na expansão, no reconhecimento e  na lucratividade de marcas e negócios.</p>
+    <div class="wrapper">
+      <h2 class="section-title wwd-title">O que fazemos</h2>
+      <p>Auxiliamos através de ferramentas web na expansão, no reconhecimento e  na lucratividade de marcas e negócios.</p>
 
-    <div class="wwd-box wwd-sites">
-      <%= render 'layouts/img/sites' %>
-      <h3 class="wwd-subtitle wwd-subtitle__sites">Sites</h3>
-      <p>Desenvolvemos sites instituicionais, portais, blog e hotsites, através das mais atualizadas tecnologias para web.</p>
+      <div class="wwd-box wwd-sites">
+        <%= render 'layouts/img/sites' %>
+        <h3 class="wwd-subtitle wwd-subtitle__sites">Sites</h3>
+        <p>Desenvolvemos sites instituicionais, portais, blog e hotsites, através das mais atualizadas tecnologias para web.</p>
+      </div>
+
+      <div class="wwd-box wwd-apps">
+        <%= render 'layouts/img/apps' %>
+        <h3 class="wwd-subtitle wwd-subtitle__apps">Apps</h3>
+        <p>Desenvolvemos aplicativos para desktop, tablets e smartphones, incluindo sistemas  criados em plataforma web.</p>
+      </div>
+
     </div>
 
-    <div class="wwd-box wwd-apps">
-      <%= render 'layouts/img/apps' %>
-      <h3 class="wwd-subtitle wwd-subtitle__apps">Apps</h3>
-      <p>Desenvolvemos aplicativos para desktop, tablets e smartphones, incluindo sistemas  criados em plataforma web.</p>
-    </div>
+  </section>
 
-  </div>
+  <section class="hwd hwd-container section-container">
 
-</section>
+    <div class="wrapper">
+      <h2 class="section-title hwd-title">Como fazemos</h2>
 
-<section class="hwd">
+      <p>Trabalhamos com o que há de mais atual no ramo web, atendendo sempre as necessidades do cliente. Utilizamos da experiência do usuário (UX) como base para construção de nossos trabalhos, evidenciando não somente a plataforma mas também o usuário que irá utilizá-la, assim pensando na melhores soluções para os melhores resultados.</p>
 
-  <div class="wrapper">
-    <h2 class="section-title hwd-title">Como fazemos</h2>
+      <h3 class="hwd-subtitle">Tecnologia da informação</h3>
+      <p>Incluimos em nossos projetos as principais tecnologias como: <strong>HTML5, CSS3, JavaScipt, Node.js, Ruby, Ruby on Rails, MySQL, PostgreSQL, MongoDB,</strong> entre outras. E também as principais ferramentas de otimizaçao para plataformas web:</p>
 
-    <p>Trabalhamos com o que há de mais atual no ramo web, atendendo sempre as necessidades do cliente. Utilizamos da experiência do usuário (UX) como base para construção de nossos trabalhos, evidenciando não somente a plataforma mas também o usuário que irá utilizá-la, assim pensando na melhores soluções para os melhores resultados.</p>
-
-    <h3 class="hwd-subtitle">Tecnologia da informação</h3>
-    <p>Incluimos em nossos projetos as principais tecnologias como: <strong>HTML5, CSS3, JavaScipt, Node.js, Ruby, Ruby on Rails, MySQL, PostgreSQL, MongoDB,</strong> entre outras. E também as principais ferramentas de otimizaçao para plataformas web:</p>
-
-    <div class="hwd-info">
-      <div class="hwd-box hwd-box__performance">
-        <%= render 'layouts/img/performance' %>
-        <h4 class="hwd-box__title">Desempenho</h4>
-        <p>Visamos o bom desempenho e performance de nossos projetos, assim otimizando ao máximo possível para gerar bons resultados, incluindo o rápido carregamento de acesso aos sites ou aplicativos.</p>
-      </div>
-
-      <div class="hwd-box hwd-box__ga">
-        <%= render 'layouts/img/ga' %>
-        <h4 class="hwd-box__title">Google Analytics</h4>
-        <p>Garante a visualização de acessos ao site, podendo ser usado como base de dados para otimização em termos de divulgação e marketing.</p>
-      </div>
-
-      <div class="hwd-box hwd-box__host">
-        <%= render 'layouts/img/host' %>
-        <h4 class="hwd-box__title">Host</h4>
-        <p>Gerenciamos a hospedagem de projetos selecionando sempre os melhores servidores, assim indicando aqueles com preços acessíveís e segurança garantida.</p>
-      </div>
-
-      <div class="hwd-box hwd-box__seo">
-        <%= render 'layouts/img/seo' %>
-        <h4 class="hwd-box__title">SEO</h4>
-        <p>Search Engine Optimization: Otimização da plataforma web para obter visibilidade em mecanismos de buscas, como Google, Bing, entre outros. Como resultado, maior número de acessos aos sites e aplicativos. </p>
-      </div>
-    </div>
-
-    <h3 class="hwd-subtitle">Desenvolvimento e criação</h3>
-    <p>Além das tecnologias aplicadas em nossos projetos também visamos a boa direção de arte, auxiliando assim o cliente do que é o melhor para a sua necessidade. Como consequência, desenvolvemos soluções criativas através de layouts agradáveis, funcionais e modernos. Trabalhamos também com layouts responsivos onde a plataforma desenvolvida na web é adaptada para desktops, tablets e smartphones, assim gerando melhor desempenho e interatividade de conteúdo com o usuário. </p>
-
-    <h3 class="hwd-subtitle rwd-subtitle">Design <br>Responsivo</h3>
-    <%= render 'layouts/img/rwd' %>
-    <p>Investir no que há de mais atual contribui para melhores resultados. Design responsivo é adaptar a sua plataforma web a todos os usuários.</p>
-
-  </div>
-
-</section>
-
-<section class="portfolio-container">
-
-  <div class="wrapper">
-    <h2 class="section-title portfolio-container__title">Portfólio</h2>
-
-    <ul class="portfolio-list">
-
-      <li class="portfolio-list__item">
-        <div class="portfolio-card portfolio-savelives">
-          <div class="portfolio-card__front">
-            <span>SaveLives</span>
-          </div>
-          <div class="portfolio-card__back">
-            <p>Projeto desenvolvido com o intuito de salvar vidas.</p>
-            <p>Acesse: <a href="http://saveliv.es" target="_blank">saveliv.es</a></p>
-          </div>
+      <div class="hwd-info">
+        <div class="hwd-box hwd-box__performance">
+          <%= render 'layouts/img/performance' %>
+          <h4 class="hwd-box__title">Desempenho</h4>
+          <p>Visamos o bom desempenho e performance de nossos projetos, assim otimizando ao máximo possível para gerar bons resultados, incluindo o rápido carregamento de acesso aos sites ou aplicativos.</p>
         </div>
-      </li>
 
-    </ul>
+        <div class="hwd-box hwd-box__ga">
+          <%= render 'layouts/img/ga' %>
+          <h4 class="hwd-box__title">Google Analytics</h4>
+          <p>Garante a visualização de acessos ao site, podendo ser usado como base de dados para otimização em termos de divulgação e marketing.</p>
+        </div>
 
-  </div>
+        <div class="hwd-box hwd-box__host">
+          <%= render 'layouts/img/host' %>
+          <h4 class="hwd-box__title">Host</h4>
+          <p>Gerenciamos a hospedagem de projetos selecionando sempre os melhores servidores, assim indicando aqueles com preços acessíveís e segurança garantida.</p>
+        </div>
 
-</section>
-
-<section class="contact-container">
-
-  <div class="wrapper">
-    <h2 class="section-title contact-container__title">Contato</h2>
-
-    <div class="contact-box contact-alpha">
-      <p>Se você se interessou pelo nosso trabalho, deseja solicitar um orçamento ou quer saber mais, envie uma mensagem:</p>
-
-      <form action="" method="post">
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="E-mail">
-        <input type="tel" placeholder="Telefone">
-        <textarea name="" placeholder="Mensagem"></textarea>
-        <button type="submit" class="contact-send"><span>Enviar</span></button>
-      </form>
-    </div>
-
-    <div class="contact-box contact-bravo">
-
-      <div class="contact-vcard">
-        <p class="awlka-sign">AWLKA</p>
-        <p class="adr">
-          <span class="adr-geo">Jaraguá do Sul | Santa Catarina | Brasil</span>
-          <span class="adr-tel">+55 47 9901.3371 - 9954.4599</span>
-          <span class="adr-email"><a href="mailto:contato@awlka.com">contato@awlka.com</a></span>
-        </p>
+        <div class="hwd-box hwd-box__seo">
+          <%= render 'layouts/img/seo' %>
+          <h4 class="hwd-box__title">SEO</h4>
+          <p>Search Engine Optimization: Otimização da plataforma web para obter visibilidade em mecanismos de buscas, como Google, Bing, entre outros. Como resultado, maior número de acessos aos sites e aplicativos. </p>
+        </div>
       </div>
 
-      <ul class="social-icons__list">
-        <li class="social-icons__item"><a href="#" class="social-icons__link social-fb"><span><%= render 'layouts/img/icon_fb' %></span></a></li>
-        <li class="social-icons__item"><a href="#" class="social-icons__link social-gp"><span><%= render 'layouts/img/icon_gp' %></span></a></li>
-        <li class="social-icons__item"><a href="#" class="social-icons__link social-in"><span><%= render 'layouts/img/icon_in' %></span></a></li>
-        <li class="social-icons__item"><a href="#" class="social-icons__link sociat-tw"><span><%= render 'layouts/img/icon_tw' %></span></a></li>
-      </ul>
+      <h3 class="hwd-subtitle">Desenvolvimento e criação</h3>
+      <p>Além das tecnologias aplicadas em nossos projetos também visamos a boa direção de arte, auxiliando assim o cliente do que é o melhor para a sua necessidade. Como consequência, desenvolvemos soluções criativas através de layouts agradáveis, funcionais e modernos. Trabalhamos também com layouts responsivos onde a plataforma desenvolvida na web é adaptada para desktops, tablets e smartphones, assim gerando melhor desempenho e interatividade de conteúdo com o usuário. </p>
+
+      <h3 class="hwd-subtitle rwd-subtitle">Design <br>Responsivo</h3>
+      <%= render 'layouts/img/rwd' %>
+      <p>Investir no que há de mais atual contribui para melhores resultados. Design responsivo é adaptar a sua plataforma web a todos os usuários.</p>
+
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <section class="portfolio-container section-container">
+
+    <div class="wrapper">
+      <h2 class="section-title portfolio-container__title">Portfólio</h2>
+
+      <ul class="portfolio-list">
+
+        <li class="portfolio-list__item">
+          <div class="portfolio-card portfolio-savelives">
+            <div class="portfolio-card__front">
+              <span>SaveLives</span>
+            </div>
+            <div class="portfolio-card__back">
+              <p>Projeto desenvolvido com o intuito de salvar vidas.</p>
+              <p>Acesse: <a href="http://saveliv.es" target="_blank">saveliv.es</a></p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section class="contact-container section-container">
+
+    <div class="wrapper">
+      <h2 class="section-title contact-container__title">Contato</h2>
+
+      <div class="contact-box contact-alpha">
+        <p>Se você se interessou pelo nosso trabalho, deseja solicitar um orçamento ou quer saber mais, envie uma mensagem:</p>
+
+        <form action="" method="post">
+          <input type="text" placeholder="Nome">
+          <input type="email" placeholder="E-mail">
+          <input type="tel" placeholder="Telefone">
+          <textarea name="" placeholder="Mensagem"></textarea>
+          <button type="submit" class="contact-send"><span>Enviar</span></button>
+        </form>
+      </div>
+
+      <div class="contact-box contact-bravo">
+
+        <div class="contact-vcard">
+          <p class="awlka-sign">AWLKA</p>
+          <p class="adr">
+            <span class="adr-geo">Jaraguá do Sul | Santa Catarina | Brasil</span>
+            <span class="adr-tel">+55 47 9901.3371 - 9954.4599</span>
+            <span class="adr-email"><a href="mailto:contato@awlka.com">contato@awlka.com</a></span>
+          </p>
+        </div>
+
+        <ul class="social-icons__list">
+          <li class="social-icons__item"><a href="#" class="social-icons__link social-fb"><span><%= render 'layouts/img/icon_fb' %></span></a></li>
+          <li class="social-icons__item"><a href="#" class="social-icons__link social-gp"><span><%= render 'layouts/img/icon_gp' %></span></a></li>
+          <li class="social-icons__item"><a href="#" class="social-icons__link social-in"><span><%= render 'layouts/img/icon_in' %></span></a></li>
+          <li class="social-icons__item"><a href="#" class="social-icons__link sociat-tw"><span><%= render 'layouts/img/icon_tw' %></span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+</main>
