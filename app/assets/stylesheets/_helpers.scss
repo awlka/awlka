@@ -22,3 +22,10 @@ $awlka-blue: #08c;
     clear: both;
   }
 }
+
+.main-header__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
