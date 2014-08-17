@@ -27,6 +27,16 @@
   #Presentation Container
 \*------------------------------------*/
 
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $awlka-black__t;
+  z-index: 2;
+}
+
 .presentation-container {
   position: fixed;
   width: 100%;
@@ -51,6 +61,16 @@
     background-size: cover;
   }
 
+  @include media($iphone-4) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @include media($iphone-5) {
+    display: none;
+    visibility: hidden;
+  }
+
 }
 
 .wrapper-center {
@@ -58,10 +78,16 @@
   top: 50%;
   left: 50%;
   @include transform(translate(-50%, -50%));
+  z-index: 3;
 }
 
 .awlka-logo__ {
   max-width: 100%;
+
+  @include media($desktop) {
+    width: 400px;
+    height: 400px;
+  }
 
   @include media($mobile) {
     width: 310px;
