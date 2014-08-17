@@ -8,7 +8,7 @@ $max-width: em(1000);
 // $visual-grid-index: front;
 
 $large-desktop: new-breakpoint(min-width 81em min-height 51em 12);
-$desktop-x: new-breakpoint(min-width 50em min-height 51em 12);
+$desktop-x: new-breakpoint(min-width 50em min-height 40em 12);
 $desktop: new-breakpoint(min-width 50em 12);
 
 $tablet: new-breakpoint(min-width 30em max-width 50em 8);

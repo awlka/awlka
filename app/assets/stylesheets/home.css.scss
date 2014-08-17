@@ -120,6 +120,22 @@
 
 }
 
+.awlka-logo__small {
+
+  @include media($desktop-x) {
+    width: 45px;
+  }
+
+  @include media($tablet) {
+    width: 35px;
+  }
+
+  @include media($mobile) {
+    width: 35px;
+  }
+
+}
+
 /*------------------------------------*\
   #Main Content
 \*------------------------------------*/
