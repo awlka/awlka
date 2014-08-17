@@ -121,17 +121,19 @@
 }
 
 .awlka-logo__small {
-
   @include media($desktop-x) {
     width: 45px;
+    height: 45px;
   }
 
   @include media($tablet) {
     width: 35px;
+    height: 35px;
   }
 
   @include media($mobile) {
     width: 35px;
+    height: 35px;
   }
 
 }
