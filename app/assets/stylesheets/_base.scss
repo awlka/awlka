@@ -54,3 +54,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+input,
+textarea {
+  @include placeholder {
+    color: $awlka-black;
+  }
+}
