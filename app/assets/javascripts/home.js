@@ -1,1 +1,1 @@
-// window.viewportUnitsBuggyfill.init();
+window.viewportUnitsBuggyfill.init();
