@@ -124,25 +124,6 @@
 
 }
 
-.awlka-logo__small {
-
-  @include media($mobile) {
-    width: 35px;
-    height: 35px;
-  }
-
-  @include media($tablet) {
-    width: 35px;
-    height: 35px;
-  }
-
-  @include media($desktop-x) {
-    width: 45px;
-    height: 45px;
-  }
-
-}
-
 /*------------------------------------*\
   #Main Content
 \*------------------------------------*/
@@ -153,6 +134,42 @@
   width: 100%;
   height: 100%;
   z-index: 9999;
+}
+
+/*------------------------------------*\
+  #Header
+\*------------------------------------*/
+.main-header {
+  padding: em(10) 0;
+  border-bottom: 1px solid $awlka-black;
+}
+
+.site-nav {
+
+  @include media($mobile) {
+    display: none;
+  }
+
+}
+
+.awlka-logo__small {
+  vertical-align: bottom;
+
+  @include media($mobile) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include media($tablet) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include media($desktop-x) {
+    width: 45px;
+    height: 45px;
+  }
+
 }
 
 /*------------------------------------*\
