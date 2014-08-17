@@ -27,6 +27,22 @@
   #Presentation Container
 \*------------------------------------*/
 
+.arrow-down {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+.arrow-down__img {
+  fill: $awlka-white;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
 .overlay {
   position: absolute;
   top: 0;
