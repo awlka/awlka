@@ -107,23 +107,28 @@
 .awlka-logo__ {
   max-width: 100%;
 
-  @include media($desktop) {
-    width: 400px;
-    height: 400px;
-  }
-
   @include media($mobile) {
     width: 1600px;
     height: 160px;
     margin: auto;
   }
 
+  @include media($tablet) {
+    height: 200px;
+  }
+
+  @include media($desktop-x) {
+    width: 400px;
+    height: 400px;
+  }
+
 }
 
 .awlka-logo__small {
-  @include media($desktop-x) {
-    width: 45px;
-    height: 45px;
+
+  @include media($mobile) {
+    width: 35px;
+    height: 35px;
   }
 
   @include media($tablet) {
@@ -131,9 +136,9 @@
     height: 35px;
   }
 
-  @include media($mobile) {
-    width: 35px;
-    height: 35px;
+  @include media($desktop-x) {
+    width: 45px;
+    height: 45px;
   }
 
 }
