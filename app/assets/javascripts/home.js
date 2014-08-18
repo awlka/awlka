@@ -39,8 +39,10 @@ var app = (function (window, document, undefined) {
       var sticky = $('.main-header'),
         scroll = $(window).scrollTop();
 
-      if (scroll >= stickyOffset) sticky.addClass('main-header__fixed');
-      else sticky.removeClass('main-header__fixed');
+      if (scroll >= stickyOffset)
+        sticky.addClass('main-header__fixed');
+      else
+        sticky.removeClass('main-header__fixed');
     });
   };
 
