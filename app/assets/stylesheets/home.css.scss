@@ -106,6 +106,7 @@
 
 .awlka-logo__ {
   max-width: 100%;
+  display: block;
 
   @include media($mobile) {
     width: 160px;

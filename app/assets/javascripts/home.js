@@ -17,7 +17,7 @@ var app = (function (window, document, undefined) {
    * Initialize other methods
    */
   app.init = function () {
-    // this.iosViewportBug();
+    this.iosViewportBug();
     this.fixHeaderScroll();
   };
 
@@ -25,9 +25,9 @@ var app = (function (window, document, undefined) {
    * Fix iOS vh unit bug
    * Using viewportUnitsBuggyfill plugin https://github.com/rodneyrehm/viewport-units-buggyfill
    */
-  // app.iosViewportBug = function () {
-  //   window.viewportUnitsBuggyfill.init();
-  // };
+  app.iosViewportBug = function () {
+    window.viewportUnitsBuggyfill.init();
+  };
 
   /*
    * Fix header on top when scroll
