@@ -249,8 +249,13 @@
 .wwd-apps__img {
 
   @include media($mobile) {
-    width: 110px;
-    height: 110px;
+    width: em(110);
+    height: em(110);
+  }
+
+  @include media($desktop-x) {
+    width: em(160);
+    height: em(160);
   }
 
 }
