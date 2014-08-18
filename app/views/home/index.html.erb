@@ -145,27 +145,30 @@
           <input type="email" placeholder="E-mail">
           <input type="tel" placeholder="Telefone">
           <textarea name="" placeholder="Mensagem"></textarea>
-          <button type="submit" class="contact-send"><span>Enviar</span></button>
+          <button type="submit" class="btn-contact__send"><span>Enviar</span></button>
         </form>
       </div>
 
       <div class="contact-box contact-bravo">
 
-        <div class="contact-vcard">
-          <p class="awlka-sign">AWLKA</p>
-          <p class="adr">
-            <span class="adr-geo">Jaraguá do Sul | Santa Catarina | Brasil</span>
-            <span class="adr-tel">+55 47 9901.3371 - 9954.4599</span>
-            <span class="adr-email"><a href="mailto:contato@awlka.com">contato@awlka.com</a></span>
-          </p>
+        <div class="contact-bravo__content">
+          <div class="contact-vcard">
+            <p class="awlka-sign">AWLKA</p>
+            <p class="adr">
+              <span class="adr-geo">Jaraguá do Sul | Santa Catarina | Brasil</span>
+              <span class="adr-tel">+55 47 9901.3371 - 9954.4599</span>
+              <span class="adr-email"><a href="mailto:contato@awlka.com">contato@awlka.com</a></span>
+            </p>
+          </div>
+
+          <ul class="social-icons__list">
+            <li class="social-icons__item"><a href="#" class="social-icons__link social-fb"><span><%= render 'layouts/img/icon_fb' %></span></a></li>
+            <li class="social-icons__item"><a href="#" class="social-icons__link social-gp"><span><%= render 'layouts/img/icon_gp' %></span></a></li>
+            <li class="social-icons__item"><a href="#" class="social-icons__link social-in"><span><%= render 'layouts/img/icon_in' %></span></a></li>
+            <li class="social-icons__item"><a href="#" class="social-icons__link sociat-tw"><span><%= render 'layouts/img/icon_tw' %></span></a></li>
+          </ul>
         </div>
 
-        <ul class="social-icons__list">
-          <li class="social-icons__item"><a href="#" class="social-icons__link social-fb"><span><%= render 'layouts/img/icon_fb' %></span></a></li>
-          <li class="social-icons__item"><a href="#" class="social-icons__link social-gp"><span><%= render 'layouts/img/icon_gp' %></span></a></li>
-          <li class="social-icons__item"><a href="#" class="social-icons__link social-in"><span><%= render 'layouts/img/icon_in' %></span></a></li>
-          <li class="social-icons__item"><a href="#" class="social-icons__link sociat-tw"><span><%= render 'layouts/img/icon_tw' %></span></a></li>
-        </ul>
       </div>
 
     </div>

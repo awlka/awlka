@@ -268,3 +268,82 @@
 .hwd-rwd__img {
   fill: $awlka-white;
 }
+
+/*------------------------------------*\
+  #Contact
+\*------------------------------------*/
+
+.btn-contact__send {
+  border: 0;
+  margin-top: em(15);
+  padding: em(8) em(30);
+
+  span {
+    color: $awlka-black;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  @include media($desktop-x) {
+    float: right;
+  }
+}
+
+input {
+  margin-bottom: em(20);
+}
+
+textarea {
+  resize: none;
+  height: em(190)
+}
+
+button,
+input,
+textarea {
+  background: $awlka-white;
+}
+
+input,
+textarea {
+  width: 100%;
+  color: $awlka-black;
+  border: 0;
+  outline: none;
+  padding: em(10) em(15);
+  &:focus {
+    background: $awlka-white;
+  }
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $awlka-white inset;
+    -webkit-text-fill-color: $awlka-black;
+  }
+
+  @include media($desktop) {
+  }
+
+}
+
+.contact-box {
+
+  @include media($desktop-x) {
+    @include span-columns(6);
+  }
+
+}
+
+.contact-bravo {
+
+  @include media($desktop-x) {
+  }
+
+}
+
+.contact-bravo__content {
+
+  @include media($desktop-x) {
+    width: 70%;
+    float: right;
+  }
+
+}
