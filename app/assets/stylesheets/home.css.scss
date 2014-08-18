@@ -25,7 +25,7 @@
 
 .section-title {
   font-size: rem(22);
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -141,7 +141,7 @@
   top: 100%;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 99;
 }
 
 /*------------------------------------*\
@@ -222,11 +222,27 @@
 }
 
 /*------------------------------------*\
-  #How we do
+  #What we do
 \*------------------------------------*/
 
-.hwd-rwd__img {
-  fill: $awlka-white;
+.wwd-box {
+  text-align: center;
+
+  @include media($desktop) {
+    @include span-columns(6);
+    padding: em(40) 0 em(80) 0;
+
+    p {
+      width: em(350);
+      margin: auto;
+    }
+  }
+
+}
+
+.wwd-subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .wwd-sites__img,
@@ -237,4 +253,13 @@
     height: 110px;
   }
 
+}
+
+
+/*------------------------------------*\
+  #How we do
+\*------------------------------------*/
+
+.hwd-rwd__img {
+  fill: $awlka-white;
 }

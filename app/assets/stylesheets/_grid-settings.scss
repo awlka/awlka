@@ -5,7 +5,8 @@ $max-width: em(1000);
 
 // Remove this on production
 // $visual-grid: true;
-// $visual-grid-index: front;
+$visual-grid-index: front;
+$visual-grid-color: #08c;
 
 $large-desktop: new-breakpoint(min-width 81em min-height 51em 12);
 $desktop-x: new-breakpoint(min-width 50em min-height 1em 12);
