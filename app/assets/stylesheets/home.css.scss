@@ -23,6 +23,12 @@
   padding: em(40) 0;
 }
 
+.section-title {
+  font-size: rem(22);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 /*------------------------------------*\
   #Presentation Container
 \*------------------------------------*/
@@ -152,6 +158,29 @@
     display: none;
   }
 
+  @include media($desktop-x) {
+    float: right;
+  }
+
+}
+
+.site-nav__item {
+
+  @include media($desktop-x) {
+    margin-left: em(20);
+    display: inline-block;
+  }
+
+}
+
+.site-nav__link {
+  color: $awlka-black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include media($desktop-x) {
+    font-size: rem(14);
+  }
 }
 
 .awlka-logo__small {
@@ -180,4 +209,14 @@
 
 .hwd-rwd__img {
   fill: $awlka-white;
+}
+
+.wwd-sites__img,
+.wwd-apps__img {
+
+  @include media($mobile) {
+    width: 110px;
+    height: 110px;
+  }
+
 }

@@ -53,14 +53,14 @@ html {
   color: $awlka-blue;
 }
 
-a {
-  color: $awlka-white;
-  text-decoration: none;
-  &:hover {
-    @include transition (all .2s ease-in-out);
-    text-decoration: underline;
-  }
-}
+// a {
+//   color: $awlka-white;
+//   text-decoration: none;
+//   &:hover {
+//     @include transition (all .2s ease-in-out);
+//     text-decoration: underline;
+//   }
+// }
 
 ul {
   list-style: none;
