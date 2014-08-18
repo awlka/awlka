@@ -36,7 +36,7 @@
 .arrow-down {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: em(10);
   left: 0;
   text-align: center;
   z-index: 3;
@@ -150,6 +150,20 @@
 .main-header {
   padding: em(10) 0;
   border-bottom: 1px solid $awlka-black;
+
+  @include media($desktop-x) {
+    height: em(80);
+  }
+
+  .wrapper {
+
+    @include media($desktop-x) {
+      position: relative;
+      top: em(8);
+      height: em(45);
+    }
+
+  }
 }
 
 .site-nav {
@@ -159,6 +173,8 @@
   }
 
   @include media($desktop-x) {
+    position: relative;
+    bottom: em(25);
     float: right;
   }
 
@@ -167,6 +183,8 @@
 .site-nav__item {
 
   @include media($desktop-x) {
+    position: relative;
+    bottom: em(10);
     margin-left: em(20);
     display: inline-block;
   }
