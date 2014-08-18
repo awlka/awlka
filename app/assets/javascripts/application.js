@@ -12,5 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require viewport-units-buggyfill
 //= require_tree .
