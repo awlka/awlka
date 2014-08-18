@@ -36,7 +36,6 @@ var app = (function (window, document, undefined) {
     var stickyOffset = $('.main-header').offset().top;
 
     $(window).scroll(function () {
-      console.log('wtf?');
       var sticky = $('.main-header'),
         scroll = $(window).scrollTop();
 
