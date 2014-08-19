@@ -31,5 +31,13 @@ $awlka-blue: #08c;
 }
 
 .wwd-container__fixed {
-  margin-top: em(82);
+
+  @include media($mobile) {
+    margin-top: em(58);
+  }
+
+  @include media($desktop-x) {
+    margin-top: em(82);
+  }
+
 }
