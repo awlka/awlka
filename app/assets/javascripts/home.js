@@ -37,12 +37,16 @@ var app = (function (window, document, undefined) {
 
     $(window).scroll(function () {
       var sticky = $('.main-header'),
+        wwdContainer = $('.wwd'),
         scroll = $(window).scrollTop();
 
-      if (scroll >= stickyOffset)
+      if (scroll >= stickyOffset) {
         sticky.addClass('main-header__fixed');
-      else
+        wwdContainer.addClass('wwd-container__fixed');
+      } else {
         sticky.removeClass('main-header__fixed');
+        wwdContainer.removeClass('wwd-container__fixed');
+      }
     });
   };
 
