@@ -42,10 +42,10 @@ var app = (function (window, document, undefined) {
 
       if (scroll >= stickyOffset) {
         sticky.addClass('main-header__fixed');
-        wwdContainer.addClass('wwd-container__fixed');
+        // wwdContainer.addClass('wwd-container__fixed');
       } else {
         sticky.removeClass('main-header__fixed');
-        wwdContainer.removeClass('wwd-container__fixed');
+        // wwdContainer.removeClass('wwd-container__fixed');
       }
     });
   };

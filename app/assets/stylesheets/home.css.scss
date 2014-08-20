@@ -258,6 +258,21 @@
   @include media($desktop-x) {
     width: em(160);
     height: em(160);
+
+    &:hover {
+      rect,
+      .wwd-circle {
+        @include transition (all .2s ease-in-out);
+        fill: $awlka-black;
+      }
+      rect {
+        stroke: $awlka-white;
+      }
+      path {
+        @include transition (all .2s ease-in-out);
+        fill: $awlka-white;
+      }
+    }
   }
 
 }
