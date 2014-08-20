@@ -477,7 +477,7 @@
 
 .portfolio-card {
   position: relative;
-  transition: 0.6s;
+  @include transition (all .6s ease-in-out);
   transform-style: preserve-3d;
   &:hover {
     @include transform(rotateY(180deg));
