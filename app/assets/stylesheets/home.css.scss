@@ -374,6 +374,28 @@
       .hwd-pr11 {
         @include transition (all 1.5s ease-in-out);
       }
+
+      .hwd-ga__p1 {
+        @include transition (all .1s ease-in-out);
+      }
+      .hwd-ga__p2 {
+        @include transition (all .3s ease-in-out);
+      }
+      .hwd-ga__p3 {
+        @include transition (all .5s ease-in-out);
+      }
+      .hwd-ga__p4 {
+        @include transition (all .7s ease-in-out);
+      }
+      .hwd-ga__p5 {
+        @include transition (all .9s ease-in-out);
+      }
+      .hwd-ga__p6 {
+        @include transition (all 1.1s ease-in-out);
+      }
+      .hwd-ga__p7 {
+        @include transition (all 1.3s ease-in-out);
+      }
     }
   }
 
