@@ -303,10 +303,49 @@
   margin: em(50) 0 em(30) 0;
 }
 
+.hwd-box__title {
+  font-size: rem(14);
+  text-transform: uppercase;
+}
+
+.rwd-subtitle,
 .hwd-subtitle {
   font-size: rem(16);
   text-transform: uppercase;
+}
+
+.hwd-subtitle {
   margin-top: em(50);
+}
+
+.rwd-section {
+  position: relative;
+  margin-top: em(50);
+
+  p {
+    text-align: left;
+
+
+    @include media($desktop-x) {
+      position: absolute;
+      top: 30%;
+      right: 0;
+      width: em(580);
+      display: inline-block;
+    }
+  }
+}
+
+.rwd-subtitle {
+  position: relative;
+  bottom: em(90);
+  margin-right: em(20);
+  text-align: right;
+  display: inline-block;
+
+  @include media($desktop-x) {
+  }
+
 }
 
 .hwd-box {
@@ -323,9 +362,15 @@
   }
 }
 
-.hwd-box__title {
-  font-size: rem(14);
-  text-transform: uppercase;
+.hwd-box__ribbon {
+
+  @include media($desktop-x) {
+    width: em(45);
+    height: em(3);
+    background: $awlka-white;
+    margin: auto;
+  }
+
 }
 
 /*------------------------------------*\
