@@ -283,6 +283,8 @@
 \*------------------------------------*/
 
 .hwd-rwd__img {
+  width: em(211);
+  height: em(211);
   fill: $awlka-white;
 }
 
@@ -303,8 +305,6 @@
   p {
     font-size: rem(14);
     font-weight: 300;
-    // width: 70%;
-    // margin: auto;
     padding: 0 em(35);
   }
 
