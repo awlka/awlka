@@ -286,6 +286,11 @@
   fill: $awlka-white;
 }
 
+.hwd-info {
+  @extend .cf;
+  margin: em(50) 0 em(30) 0;
+}
+
 .hwd-subtitle {
   font-size: rem(16);
   text-transform: uppercase;
@@ -294,6 +299,14 @@
 
 .hwd-box {
   text-align: center;
+
+  p {
+    font-size: rem(14);
+    font-weight: 300;
+    // width: 70%;
+    // margin: auto;
+    padding: 0 em(35);
+  }
 
   @include media($desktop-x) {
     @include span-columns(3);
