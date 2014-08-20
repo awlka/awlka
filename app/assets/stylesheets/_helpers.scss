@@ -8,6 +8,8 @@ $awlka-white: #f0f0f0;
 $awlka-grey: #ccc;
 $awlka-blue: #08c;
 
+$savelives-green: #1daabf;
+
 /*------------------------------------*\
   Helpers
 \*------------------------------------*/
@@ -28,6 +30,7 @@ $awlka-blue: #08c;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9;
 }
 
 .wwd-container__fixed {

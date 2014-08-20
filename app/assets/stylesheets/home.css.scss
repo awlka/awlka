@@ -446,6 +446,64 @@
 
 }
 
+/*------------------------------------*\
+  #Portfolio
+\*------------------------------------*/
+
+.portfolio-container {
+
+  @include media($desktop-x) {
+    min-height: em(800);
+  }
+}
+
+.portfolio-list {
+
+}
+
+.portfolio-list__item {
+  // position: relative;
+  @include perspective(1000);
+
+  @include media($desktop-x) {
+    @include span-columns(4);
+    @include omega(3n);
+    margin-top: em(10);
+    margin-bottom: em(10);
+  }
+}
+
+.portfolio-card {
+  position: relative;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+  &:hover {
+    @include transform(rotateY(180deg));
+  }
+}
+
+.portfolio-card__back,
+.portfolio-card__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include backface-visibility(hidden);
+  padding: em(20);
+  width: em(300);
+  height: em(300);
+}
+
+.portfolio-card__front {
+  background: $savelives-green;
+  z-index: 2;
+}
+
+.portfolio-card__back {
+  background: $awlka-black;
+  color: $awlka-white;
+  @include transform(rotateY(180deg));
+}
+
 
 /*------------------------------------*\
   #Contact
