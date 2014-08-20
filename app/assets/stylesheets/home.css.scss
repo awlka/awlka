@@ -20,7 +20,7 @@
 }
 
 .section-container {
-  padding: em(40) 0;
+  padding: em(70) 0;
 }
 
 .section-title {
@@ -284,6 +284,25 @@
 
 .hwd-rwd__img {
   fill: $awlka-white;
+}
+
+.hwd-subtitle {
+  font-size: rem(16);
+  text-transform: uppercase;
+  margin-top: em(50);
+}
+
+.hwd-box {
+  text-align: center;
+
+  @include media($desktop-x) {
+    @include span-columns(3);
+  }
+}
+
+.hwd-box__title {
+  font-size: rem(14);
+  text-transform: uppercase;
 }
 
 /*------------------------------------*\
