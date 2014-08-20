@@ -511,6 +511,12 @@ textarea {
 
 }
 
+.contact-alpha {
+  p {
+    margin: 0 0 em(15) 0;
+  }
+}
+
 .contact-bravo {
 
   @include media($desktop-x) {
@@ -521,6 +527,7 @@ textarea {
 .contact-bravo__content {
 
   @include media($desktop-x) {
+    margin-top: em(150);
     width: 70%;
     float: right;
   }
@@ -529,9 +536,11 @@ textarea {
 
 .awlka-sign {
   font-weight: 600;
+  margin: 0;
 }
 
 .adr {
+  margin: 0 0 em(10) 0;
   span {
     display: block;
   }
