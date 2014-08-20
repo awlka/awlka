@@ -526,3 +526,21 @@ textarea {
   }
 
 }
+
+.awlka-sign {
+  font-weight: 600;
+}
+
+.adr {
+  span {
+    display: block;
+  }
+  a {
+    color: $awlka-white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      @include transition (all .2s ease-in-out);
+    }
+  }
+}
