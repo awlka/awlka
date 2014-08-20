@@ -396,6 +396,12 @@
       .hwd-ga__p7 {
         @include transition (all 1.3s ease-in-out);
       }
+
+      .hwd-seo__path,
+      .hwd-host__path {
+        fill: $awlka-black;
+        @include transition (all .5s ease-in-out);
+      }
     }
   }
 
