@@ -462,12 +462,14 @@
 }
 
 .portfolio-list__item {
+  @extend .cf;
   // position: relative;
   @include perspective(1000);
 
   @include media($desktop-x) {
     @include span-columns(4);
     @include omega(3n);
+    height: em(300);
     margin-top: em(10);
     margin-bottom: em(10);
   }
@@ -475,7 +477,7 @@
 
 .portfolio-card {
   position: relative;
-  transition: 0.3s;
+  transition: 0.6s;
   transform-style: preserve-3d;
   &:hover {
     @include transform(rotateY(180deg));
