@@ -308,6 +308,77 @@
   text-transform: uppercase;
 }
 
+.hwd-box {
+  text-align: center;
+
+  p {
+    font-size: rem(14);
+    font-weight: 300;
+    padding: 0 em(35);
+  }
+
+  @include media($desktop-x) {
+    @include span-columns(3);
+  }
+}
+
+.hwd-box__ribbon {
+
+  @include media($desktop-x) {
+    width: em(45);
+    height: em(3);
+    background: $awlka-white;
+    margin: auto;
+  }
+
+}
+
+.hwd-symbols {
+
+  @include media($desktop-x) {
+    &:hover {
+      .hwd-circle {
+        fill: $awlka-white;
+        @include transition (all .2s ease-in-out);
+      }
+      .hwd-p {
+        fill: $awlka-black;
+      }
+      .hwd-pr2 {
+        @include transition (all .4ms ease-in-out);
+      }
+      .hwd-pr3 {
+        @include transition (all .10ms ease-in-out);
+      }
+      .hwd-pr4 {
+        @include transition (all .1s ease-in-out);
+      }
+      .hwd-pr5 {
+        @include transition (all .3s ease-in-out);
+      }
+      .hwd-pr6 {
+        @include transition (all .5s ease-in-out);
+      }
+      .hwd-pr7 {
+        @include transition (all .7s ease-in-out);
+      }
+      .hwd-pr8 {
+        @include transition (all .9s ease-in-out);
+      }
+      .hwd-pr9 {
+        @include transition (all 1.1s ease-in-out);
+      }
+      .hwd-pr10 {
+        @include transition (all 1.3s ease-in-out);
+      }
+      .hwd-pr11 {
+        @include transition (all 1.5s ease-in-out);
+      }
+    }
+  }
+
+}
+
 .rwd-subtitle,
 .hwd-subtitle {
   font-size: rem(16);
@@ -348,30 +419,6 @@
 
 }
 
-.hwd-box {
-  text-align: center;
-
-  p {
-    font-size: rem(14);
-    font-weight: 300;
-    padding: 0 em(35);
-  }
-
-  @include media($desktop-x) {
-    @include span-columns(3);
-  }
-}
-
-.hwd-box__ribbon {
-
-  @include media($desktop-x) {
-    width: em(45);
-    height: em(3);
-    background: $awlka-white;
-    margin: auto;
-  }
-
-}
 
 /*------------------------------------*\
   #Contact
