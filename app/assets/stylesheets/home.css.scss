@@ -544,3 +544,13 @@ textarea {
     }
   }
 }
+
+.social-icons__item {
+  display: inline-block;
+  margin-right: em(10);
+}
+
+.social-icons__img {
+  width: em(42);
+  height: em(42);
+}
