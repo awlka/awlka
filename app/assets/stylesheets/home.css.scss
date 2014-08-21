@@ -181,6 +181,10 @@
     display: none;
   }
 
+  @include media($tablet) {
+    display: none;
+  }
+
   @include media($desktop-x) {
     position: relative;
     float: right;
