@@ -452,13 +452,22 @@
 
 .portfolio-container {
 
-  @include media($desktop-x) {
-    min-height: em(800);
-  }
 }
 
 .portfolio-list {
+  @extend .cf;
 
+  @include media($mobile) {
+    min-height: em(500);
+  }
+
+  @include media($tablet) {
+    min-height: em(600);
+  }
+
+  @include media($desktop-x) {
+    min-height: em(800);
+  }
 }
 
 .portfolio-list__item {
@@ -478,9 +487,13 @@
 .portfolio-card {
   position: relative;
   @include transition (all .6s ease-in-out);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  &:hover {
-    @include transform(rotateY(180deg));
+
+  @include media($desktop-x) {
+    &:hover {
+      @include transform(rotateY(180deg));
+    }
   }
 }
 
