@@ -547,6 +547,10 @@
 
   @include media($desktop-x) {
     float: right;
+    &:hover {
+      @include transition(all, .6s);
+      background: darken($awlka-white, 20);
+    }
   }
 }
 
