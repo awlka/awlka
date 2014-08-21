@@ -106,6 +106,7 @@
 }
 
 .awlka-subtitle {
+  margin: 0;
   font-size: rem(18);
   font-weight: 300;
   text-transform: uppercase;
@@ -150,6 +151,7 @@
   #Header
 \*------------------------------------*/
 .main-header {
+  position: relative;
   padding: em(10) 0;
   border-bottom: 1px solid $awlka-black;
 
@@ -591,6 +593,14 @@ textarea {
 }
 
 .contact-bravo {
+
+  @include media($mobile) {
+    margin-top: em(50);
+  }
+
+  @include media($tablet) {
+    margin-top: em(40);
+  }
 
   @include media($desktop-x) {
   }
