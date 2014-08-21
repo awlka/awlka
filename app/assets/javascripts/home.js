@@ -52,7 +52,7 @@ var app = (function (window, document, undefined) {
   };
 
   app.onScrollAnimation = function () {
-    window.scrollReveal = new scrollReveal();
+    window.scrollReveal = new scrollReveal({reset: true});
   };
 
   return app.init();
