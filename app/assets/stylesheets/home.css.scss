@@ -170,6 +170,11 @@
   }
 }
 
+.main-header__logo {
+  float: left;
+  display: inline-block;
+}
+
 .site-nav {
 
   @include media($mobile) {
@@ -178,7 +183,6 @@
 
   @include media($desktop-x) {
     position: relative;
-    bottom: em(44);
     float: right;
   }
 
@@ -196,7 +200,7 @@
 
   @include media($desktop-x) {
     position: relative;
-    bottom: em(10);
+    bottom: em(9);
     line-height: 4;
     margin-left: em(20);
     display: inline-block;
