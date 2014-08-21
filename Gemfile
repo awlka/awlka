@@ -50,5 +50,8 @@ gem 'rails-assets-normalize.css'
 # Viewport Units buggyfill
 gem 'rails-assets-viewport-units-buggyfill'
 
+# scrollReveal
+gem 'rails-assets-scrollReveal.js'
+
 # Assets
 gem 'rails_12factor', group: :production
