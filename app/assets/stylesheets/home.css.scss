@@ -537,6 +537,14 @@
     text-transform: uppercase;
   }
 
+  @include media($mobile) {
+    width: 100%;
+  }
+
+  @include media($tablet) {
+    width: 100%;
+  }
+
   @include media($desktop-x) {
     float: right;
   }
