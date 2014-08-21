@@ -24,23 +24,3 @@ $savelives-green: #1daabf;
     clear: both;
   }
 }
-
-.main-header__fixed {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-}
-
-.wwd-container__fixed {
-
-  // @include media($mobile) {
-  //   margin-top: em(58);
-  // }
-
-  @include media($desktop-x) {
-    margin-top: em(80);
-  }
-
-}
