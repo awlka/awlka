@@ -53,5 +53,8 @@ gem 'rails-assets-viewport-units-buggyfill'
 # scrollReveal
 gem 'rails-assets-scrollReveal.js'
 
+# scrollToFixed
+gem 'rails-assets-ScrollToFixed'
+
 # Assets
 gem 'rails_12factor', group: :production
