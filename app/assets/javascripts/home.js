@@ -19,6 +19,7 @@ var app = (function (window, document, undefined) {
   app.init = function () {
     this.iosViewportBug();
     this.fixHeaderScroll();
+    this.onScrollAnimation();
   };
 
   /*
@@ -48,6 +49,10 @@ var app = (function (window, document, undefined) {
         wwdContainer.removeClass('wwd-container__fixed');
       }
     });
+  };
+
+  app.onScrollAnimation = function () {
+    window.scrollReveal = new scrollReveal();
   };
 
   return app.init();
