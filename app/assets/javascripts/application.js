@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require viewport-units-buggyfill
 //= require scrollReveal.js
+//= require ScrollToFixed
 //= require_tree .

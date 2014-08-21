@@ -20,39 +20,31 @@ var app = (function (window, document, undefined) {
     this.iosViewportBug();
     // this.fixHeaderScroll();
     this.onScrollAnimation();
+    this.scrollToFixed();
   };
 
   /*
    * Fix iOS vh unit bug
-   * Using viewportUnitsBuggyfill plugin https://github.com/rodneyrehm/viewport-units-buggyfill
+   * Using: viewportUnitsBuggyfill plugin https://github.com/rodneyrehm/viewport-units-buggyfill
    */
   app.iosViewportBug = function () {
     window.viewportUnitsBuggyfill.init();
   };
 
   /*
-   * Fix header on top when scroll
+   * Animate some elements on scroll
+   * Using: https://github.com/julianlloyd/scrollReveal.js
    */
-  app.fixHeaderScroll = function () {
-    var stickyOffset = $('.main-header').offset().top;
-
-    $(window).scroll(function () {
-      var sticky = $('.main-header'),
-        wwdContainer = $('.wwd'),
-        scroll = $(window).scrollTop();
-
-      if (scroll >= stickyOffset) {
-        sticky.addClass('main-header__fixed');
-        wwdContainer.addClass('wwd-container__fixed');
-      } else {
-        sticky.removeClass('main-header__fixed');
-        wwdContainer.removeClass('wwd-container__fixed');
-      }
-    });
-  };
-
   app.onScrollAnimation = function () {
     window.scrollReveal = new scrollReveal({reset: true});
+  };
+
+  /*
+   * Fix header on scroll
+   * Using: https://github.com/bigspotteddog/ScrollToFixed
+   */
+  app.scrollToFixed = function () {
+    $('.main-header').scrollToFixed();
   };
 
   return app.init();
