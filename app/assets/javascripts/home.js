@@ -18,7 +18,7 @@ var app = (function (window, document, undefined) {
    */
   app.init = function () {
     this.iosViewportBug();
-    this.fixHeaderScroll();
+    // this.fixHeaderScroll();
     this.onScrollAnimation();
   };
 
