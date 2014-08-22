@@ -332,6 +332,10 @@
     padding: 0 em(35);
   }
 
+  @include media($mobile) {
+    margin-bottom: em(50);
+  }
+
   @include media($desktop-x) {
     @include span-columns(3);
   }
