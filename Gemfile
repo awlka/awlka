@@ -56,5 +56,8 @@ gem 'rails-assets-scrollReveal.js'
 # scrollToFixed
 gem 'rails-assets-ScrollToFixed'
 
+# ScrollIt
+gem 'rails-assets-ScrollIt'
+
 # Assets
 gem 'rails_12factor', group: :production
