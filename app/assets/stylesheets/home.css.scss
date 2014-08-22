@@ -540,6 +540,14 @@
   #Contact
 \*------------------------------------*/
 
+.contact-container {
+
+
+  @include media($large-desktop) {
+    height: 101vh;
+  }
+}
+
 .btn-contact__send {
   border: 0;
   margin-top: em(15);
