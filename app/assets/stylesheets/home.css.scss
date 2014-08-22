@@ -546,6 +546,12 @@
   @include media($large-desktop) {
     height: 101vh;
   }
+
+  .wrapper {
+    @include media($large-desktop) {
+      margin-top: em(90);
+    }
+  }
 }
 
 .btn-contact__send {
