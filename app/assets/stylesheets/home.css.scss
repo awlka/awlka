@@ -255,6 +255,10 @@
 .wwd-box {
   text-align: center;
 
+  @include media($mobile) {
+    margin: em(80) 0;
+  }
+
   @include media($desktop) {
     @include span-columns(6);
     padding: em(40) 0 em(80) 0;
