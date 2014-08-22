@@ -219,8 +219,13 @@
   text-decoration: none;
 
   @include media($desktop-x) {
+    padding-bottom: em(25);
     font-size: rem(14);
   }
+}
+
+.active {
+  border-bottom: 6px solid $awlka-black;
 }
 
 .awlka-logo__small {

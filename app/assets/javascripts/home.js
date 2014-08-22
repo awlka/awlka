@@ -20,6 +20,8 @@ var app = (function (window, document, undefined) {
     this.iosViewportBug();
     this.onScrollAnimation();
     this.scrollToFixed();
+    this.scrollIt();
+    this.backToTop();
   };
 
   /*
@@ -44,6 +46,26 @@ var app = (function (window, document, undefined) {
    */
   app.scrollToFixed = function () {
     $('.main-header').scrollToFixed();
+  };
+
+  /*
+   * Scroll to section
+   * Using: https://github.com/cmpolis/scrollIt.js
+   */
+  app.scrollIt = function () {
+    $.scrollIt();
+  };
+
+  /*
+   * Back to top
+   */
+  app.backToTop = function () {
+    $('.main-header__logo').on('click', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+    });
   };
 
   return app.init();
