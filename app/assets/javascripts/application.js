@@ -15,4 +15,5 @@
 //= require viewport-units-buggyfill
 //= require scrollReveal.js
 //= require ScrollToFixed
+//= require ../../../lib/assets/js/scrollit
 //= require_tree .
