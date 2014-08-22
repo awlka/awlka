@@ -154,6 +154,7 @@
   position: relative;
   padding: em(10) 0;
   border-bottom: 1px solid $awlka-black;
+  -webkit-transform: translateZ(0);
 
   @include media($desktop-x) {
     height: em(80);
@@ -482,7 +483,7 @@
 
 .portfolio-list__item {
   @extend .cf;
-  // position: relative;
+  -ms-perspective: 1000;
   @include perspective(1000);
 
   @include media($desktop-x) {
