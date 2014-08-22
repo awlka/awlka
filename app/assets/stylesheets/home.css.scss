@@ -157,14 +157,13 @@
   -webkit-transform: translateZ(0);
 
   @include media($desktop-x) {
-    height: em(80);
+    height: em(64);
   }
 
   .wrapper {
 
     @include media($desktop-x) {
       position: relative;
-      top: em(8);
       height: em(45);
     }
 
@@ -205,8 +204,7 @@
 
   @include media($desktop-x) {
     position: relative;
-    bottom: em(9);
-    line-height: 4;
+    line-height: 3;
     margin-left: em(20);
     display: inline-block;
   }
@@ -219,7 +217,7 @@
   text-decoration: none;
 
   @include media($desktop-x) {
-    padding-bottom: em(25);
+    padding-bottom: em(16);
     font-size: rem(14);
   }
 }
