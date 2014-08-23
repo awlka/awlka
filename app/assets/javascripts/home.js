@@ -54,7 +54,8 @@ var app = (function (window, document, undefined) {
    */
   app.scrollIt = function () {
     $.scrollIt({
-      activeClass: 'site-nav__link-active'
+      activeClass: 'site-nav__link-active',
+      // topOffset: -25
     });
   };
 
