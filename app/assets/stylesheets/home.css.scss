@@ -473,7 +473,15 @@
 \*------------------------------------*/
 
 .portfolio-container {
-
+  a {
+    color: $awlka-white;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      @include transition (all .6s ease-in-out);
+      text-decoration: underline;
+    }
+  }
 }
 
 .portfolio-list {
