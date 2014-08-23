@@ -53,7 +53,9 @@ var app = (function (window, document, undefined) {
    * Using: https://github.com/cmpolis/scrollIt.js
    */
   app.scrollIt = function () {
-    $.scrollIt();
+    $.scrollIt({
+      activeClass: 'site-nav__link-active'
+    });
   };
 
   /*
