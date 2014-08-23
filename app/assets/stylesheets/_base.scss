@@ -4,6 +4,12 @@
 
 @import 'helpers';
 
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
