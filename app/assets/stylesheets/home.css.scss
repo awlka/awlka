@@ -192,40 +192,6 @@
 
 }
 
-.nav-toggle {
-  position: absolute;
-  top: em(30);
-  right: em(50);
-  cursor: pointer;
-}
-
-.nav-toggle__button:after,
-.nav-toggle__button:before,
-.nav-toggle__button {
-  @include transition(all 500ms ease-in-out);
-  position: absolute;
-  border-radius: 1px;
-  height: em(5);
-  width: em(35);
-  background: $awlka-black;
-  display: block;
-  content: '';
-
-  @include media($desktop-x) {
-    display: none;
-    visibility: hidden;
-  }
-
-}
-
-.nav-toggle__button:after {
-  bottom: em(-10);
-}
-
-.nav-toggle__button:before {
-  top: em(-10);
-}
-
 .site-nav__item {
 
   &:hover {
