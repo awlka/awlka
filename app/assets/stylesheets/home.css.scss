@@ -197,6 +197,7 @@
   &:hover {
 
     @include media($desktop-x) {
+      @include transition (all 0.05s ease-in-out);
       border-bottom: 6px solid $awlka-black;
     }
 
