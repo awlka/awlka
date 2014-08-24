@@ -32,6 +32,10 @@ html {
    }
 }
 
+body {
+  margin: 0;
+}
+
 .wrapper {
   @include outer-container;
   padding: 0 em(20);
