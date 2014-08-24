@@ -22,6 +22,7 @@ var app = (function (window, document, undefined) {
     this.scrollToFixed();
     this.scrollIt();
     this.backToTop();
+    this.toggleButtonMenu('.nav-toggle__button-close', '.nav-toggle__button-open');
   };
 
   /*
@@ -68,6 +69,14 @@ var app = (function (window, document, undefined) {
       $('html, body').animate({
         scrollTop: 0
       }, 1000);
+    });
+  };
+
+  app.toggleButtonMenu = function (c, o) {
+
+    $(c).on('click', function () {
+      $(c).hide();
+      $(o).show();
     });
   };
 

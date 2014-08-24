@@ -24,3 +24,10 @@ $savelives-green: #1daabf;
     clear: both;
   }
 }
+
+.nav-toggle__active {
+  display: inline-block;
+  visibility: visible;
+  @include transition(transform .25s ease-out 0s);
+  @include transform(rotate 0deg);
+}
