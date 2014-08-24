@@ -48,7 +48,7 @@ gem 'neat'
 gem 'rails-assets-retreat-hell'
 
 # Normalize
-gem 'rails-assets-normalize.css'
+# gem 'rails-assets-normalize.css'
 
 # Viewport Units buggyfill
 gem 'rails-assets-viewport-units-buggyfill'
