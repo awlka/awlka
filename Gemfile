@@ -44,6 +44,9 @@ gem 'spring',        group: :development
 # Neat by Bourbon
 gem 'neat'
 
+# Retreat Hell!
+gem 'rails-assets-retreat-hell'
+
 # Normalize
 gem 'rails-assets-normalize.css'
 
