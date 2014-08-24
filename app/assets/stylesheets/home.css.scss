@@ -194,6 +194,22 @@
 
 }
 
+.nav-toggle {
+  display: inline-block;
+  cursor: pointer;
+
+  @include media($desktop-x) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.nav-toggle__button {
+  position: absolute;
+  width: em(56);
+  height: em(44);
+}
+
 .site-nav__item {
 
   &:hover {
