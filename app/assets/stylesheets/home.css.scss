@@ -210,6 +210,11 @@
   position: absolute;
   width: em(56);
   height: em(44);
+  @include transition(transform .25s ease-out 0s);
+}
+
+.nav-toggle__button-close {
+  @include transform(rotate 0deg);
 }
 
 .nav-toggle__button-open {
@@ -542,8 +547,7 @@
 .portfolio-card {
   position: relative;
   @include transition (all .6s ease-in-out);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  @include transform-style(preserve-3d);
 
   @include media($desktop-x) {
     &:hover {

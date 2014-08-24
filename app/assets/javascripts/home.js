@@ -22,7 +22,7 @@ var app = (function (window, document, undefined) {
     this.scrollToFixed();
     this.scrollIt();
     this.backToTop();
-    this.toggleButtonMenu('.nav-toggle__button-close', '.nav-toggle__button-open');
+    this.toggleButtonMenu('.nav-toggle', '.nav-toggle__button-close', '.nav-toggle__button-open');
   };
 
   /*
@@ -72,11 +72,11 @@ var app = (function (window, document, undefined) {
     });
   };
 
-  app.toggleButtonMenu = function (c, o) {
+  app.toggleButtonMenu = function (x, c, o) {
 
-    $(c).on('click', function () {
-      $(c).hide();
-      $(o).show();
+    $(x).on('click', function () {
+      $(c).toggle();
+      $(o).toggle();
     });
   };
 

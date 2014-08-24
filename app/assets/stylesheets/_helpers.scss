@@ -28,6 +28,11 @@ $savelives-green: #1daabf;
 .nav-toggle__active {
   display: inline-block;
   visibility: visible;
-  @include transition(transform .25s ease-out 0s);
+  @include transform(rotate 0deg);
+}
+
+.nav-toggle__inactive {
+  display: none;
+  visibility: hidden;
   @include transform(rotate 0deg);
 }
