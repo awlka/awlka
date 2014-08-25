@@ -64,3 +64,17 @@ gem 'rails-assets-ScrollToFixed'
 
 # Assets
 gem 'rails_12factor', group: :production
+
+# Email
+gem 'mail_form'
+
+# Form helpers
+gem 'simple_form'
+
+# Devise
+gem 'devise'
+
+# Only for dev and test
+group :development, :test do
+gem 'foreman'
+end
