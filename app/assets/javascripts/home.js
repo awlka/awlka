@@ -22,7 +22,7 @@ var app = (function (window, document, undefined) {
     this.scrollToFixed();
     this.scrollIt();
     this.backToTop();
-    this.toggleButtonMenu('.nav-toggle', '.nav-toggle__button-close', '.nav-toggle__button-open');
+    this.toggleMenu();
   };
 
   /*
@@ -72,11 +72,28 @@ var app = (function (window, document, undefined) {
     });
   };
 
+  /*
+   * Change button menu
+   */
   app.toggleButtonMenu = function (x, c, o) {
+    var logo = $('.site-logo__img');
 
     $(x).on('click', function () {
       $(c).toggle();
       $(o).toggle();
+      $(logo).toggle();
+    });
+  };
+
+  /*
+   * Toggle Menu
+   */
+  app.toggleMenu = function () {
+    this.toggleButtonMenu('.nav-toggle', '.nav-toggle__button-close', '.nav-toggle__button-open');
+    var menu = $('.site-nav');
+
+    $('.nav-toggle').on('click', function () {
+      $(menu).slideToggle();
     });
   };
 
