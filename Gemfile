@@ -74,6 +74,9 @@ gem 'simple_form'
 # Devise
 gem 'devise'
 
+# Vanilla Masker
+gem 'rails-assets-vanilla-masker'
+
 # Only for dev and test
 group :development, :test do
 gem 'foreman'
