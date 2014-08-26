@@ -667,6 +667,11 @@
       margin-top: em(90);
     }
   }
+
+}
+
+.contact-form {
+  @extend .cf;
 }
 
 .btn-contact__send {
