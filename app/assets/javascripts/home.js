@@ -98,6 +98,9 @@ var app = (function (window, document, undefined) {
     });
   };
 
+  /*
+   * Submit contact form
+   */
   app.contactSubmit = function () {
     var form = $('.contact-form'),
       dataForm = $(form).serialize();
