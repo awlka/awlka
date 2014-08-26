@@ -1,0 +1,7 @@
+<%= simple_form_for @contact, :html => {:class => 'contact-form'} do |f| %>
+  <%= f.input :name %>
+  <%= f.email_field(:contact, :address) %>
+  <%= f.telephone_field(:contact, :phone) %>
+  <%= f.text_area :message %>
+  <button type="submit" class="btn-contact__send"><span>Enviar</span></button>
+<% end %>
