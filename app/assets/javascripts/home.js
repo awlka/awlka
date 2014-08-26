@@ -102,6 +102,7 @@ var app = (function (window, document, undefined) {
    * Submit contact form
    */
   app.contactSubmit = function () {
+    this.inputMasks();
     var form = $('.contact-form'),
       dataForm = $(form).serialize();
 
@@ -115,8 +116,13 @@ var app = (function (window, document, undefined) {
 
   };
 
+  /*
+   * Input mask
+   * Using https://github.com/BankFacil/vanilla-masker
+   */
   app.inputMasks = function () {
-
+    var phone = new VanillaMasker();
+    phone.maskPattern(document.getElementById('contact-phone'), '(99) 999999999');
   };
 
   return app.init();
