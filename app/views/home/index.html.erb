@@ -212,14 +212,15 @@
       <div data-scroll-reveal="enter from the bottom after .2s" class="contact-box contact-alpha">
         <p>Se você se interessou pelo nosso trabalho, deseja solicitar um orçamento ou quer saber mais, envie uma mensagem:</p>
 
-        <form action="/contacts" method="post">
-          <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+        <%= render 'contacts/new' %>
+
+        <!-- <form action="/contacts" method="post">
           <input type="text" placeholder="Nome">
           <input type="email" placeholder="E-mail">
           <input type="tel" placeholder="Telefone">
           <textarea name="" placeholder="Mensagem"></textarea>
           <button type="submit" class="btn-contact__send"><span>Enviar</span></button>
-        </form>
+        </form> -->
       </div>
 
       <div data-scroll-reveal="enter from the bottom after .6s" class="contact-box contact-bravo">
