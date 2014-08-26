@@ -115,6 +115,10 @@ var app = (function (window, document, undefined) {
 
   };
 
+  app.inputMasks = function () {
+
+  };
+
   return app.init();
 
 })(window, document);
