@@ -55,11 +55,11 @@ body {
 }
 
 ::-moz-selection {
-  background: $awlka-black;
+  background: transparent;
   color: $awlka-blue;
 }
 ::selection {
-  background: $awlka-black;
+  background: transparent;
   color: $awlka-blue;
 }
 
