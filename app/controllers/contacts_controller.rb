@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
     if @contact.deliver
       flash.now[:notice] = "Ok!"
     else
-      flash.now[:notice] = "Not ok at all!"
+      format.json { render :json => { :error => @contact.errors.full_messages }, :status => 422 }
     end
     render :template => 'home/index', :layout => false
   end

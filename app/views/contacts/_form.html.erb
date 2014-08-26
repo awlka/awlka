@@ -1,8 +1,7 @@
-<form class="contact-form" action="/contacts" method="post" data-remote="true">
-  <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+<%= simple_form_for @contact, :html => {:class => 'contact-form'}, :remote => true do |f| %>
   <input type="text" name="contact[name]" placeholder="Nome" id="contact-name">
   <input type="email" name="contact[email]" placeholder="E-mail" id="contact-email">
   <input type="tel" name="contact[telephone]" placeholder="Telefone" id="contact-phone">
   <textarea name="contact[message]" placeholder="Mensagem" id="contact-message"></textarea>
   <button type="submit" class="btn-contact__send"><span>Enviar</span></button>
-</form>
+<% end %>

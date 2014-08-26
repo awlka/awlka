@@ -108,8 +108,11 @@ var app = (function (window, document, undefined) {
 
     $(form).on('ajax:success', function () {
       console.log('200');
-    }).on('ajax:error', function () {
-      console.log('404');
+    }).on('ajax:error', function (evt, xhr, status, error) {
+      var errors = xhr.responseJSON.error
+      for (message in errors) {
+        console.log(errors[message]);
+      }
     }).on('ajax:complete', function () {
       console.log('Yo!');
     });
