@@ -102,26 +102,12 @@ var app = (function (window, document, undefined) {
     var form = $('.contact-form'),
       dataForm = $(form).serialize();
 
-    $(form).submit(function () {
-
-      var contactAjax = $.ajax({
-        url: '/contacts',
-        type: 'POST',
-        data: dataForm
-      });
-
-      contactAjax.done(function (data) {
-        console.log('Ok');
-      });
-
-      contactAjax.fail(function (data) {
-        console.log('Not');
-      });
-
-      contactAjax.always(function () {
-        console.log(' Ok!!!!!');
-      });
-
+    $(form).on('ajax:success', function () {
+      console.log('200');
+    }).on('ajax:error', function () {
+      console.log('404');
+    }).on('ajax:complete', function () {
+      console.log('Yo!');
     });
 
   };
