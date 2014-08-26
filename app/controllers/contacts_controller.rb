@@ -12,6 +12,7 @@ class ContactsController < ApplicationController
     else
       flash.now[:notice] = "Not ok at all!"
     end
+    render :template => 'home/index', :layout => false
   end
 
 end
