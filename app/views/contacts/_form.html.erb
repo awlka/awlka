@@ -1,4 +1,4 @@
-<form action="/contacts" method="post">
+<form class="contact-form" action="/contacts" method="post" data-remote="true">
   <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
   <input type="text" name="contact[name]" placeholder="Nome">
   <input type="email" name="contact[email]" placeholder="E-mail">

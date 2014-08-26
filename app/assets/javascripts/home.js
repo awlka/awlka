@@ -23,6 +23,7 @@ var app = (function (window, document, undefined) {
     this.scrollIt();
     this.backToTop();
     this.toggleMenu();
+    this.contactSubmit();
   };
 
   /*
@@ -95,6 +96,34 @@ var app = (function (window, document, undefined) {
     $('.nav-toggle').on('click', function () {
       $(menu).slideToggle();
     });
+  };
+
+  app.contactSubmit = function () {
+    var form = $('.contact-form'),
+      dataForm = $(form).serialize();
+
+    $(form).submit(function () {
+
+      var contactAjax = $.ajax({
+        url: '/contacts',
+        type: 'POST',
+        data: dataForm
+      });
+
+      contactAjax.done(function (data) {
+        console.log('Ok');
+      });
+
+      contactAjax.fail(function (data) {
+        console.log('Not');
+      });
+
+      contactAjax.always(function () {
+        console.log(' Ok!!!!!');
+      });
+
+    });
+
   };
 
   return app.init();
