@@ -79,6 +79,7 @@ gem 'rails-assets-vanilla-masker'
 
 # Validate
 gem 'judge'
+gem 'judge-simple_form'
 
 # Only for dev and test
 group :development, :test do
