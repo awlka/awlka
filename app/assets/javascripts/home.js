@@ -193,7 +193,7 @@ var app = (function (window, document, undefined) {
     var msg = $('#contact-message');
 
     $(refreshMe).on('click', function () {
-      successContent.addClass('is-hidden');
+      successContent.removeClass('is-visible-x').addClass('is-hidden');
       form.removeClass('is-hidden');
       $('.contact-container__title').removeClass('is-hidden');
       $('.contact-container__subtitle').removeClass('is-hidden');
