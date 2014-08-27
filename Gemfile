@@ -70,6 +70,7 @@ gem "rack-timeout"
 
 # Assets
 gem 'rails_12factor', group: :production
+gem 'heroku_rails_deflate', :group => :production
 
 # Email
 gem 'mail_form'
