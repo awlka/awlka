@@ -77,6 +77,9 @@ gem 'devise'
 # Vanilla Masker
 gem 'rails-assets-vanilla-masker'
 
+# jQuery Validation
+gem 'rails-assets-jquery-validation'
+
 # Only for dev and test
 group :development, :test do
 gem 'foreman'
