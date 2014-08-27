@@ -65,6 +65,9 @@ gem 'rails-assets-ScrollToFixed'
 # Unicorn
  gem 'unicorn'
 
+# Rack Timeout
+gem "rack-timeout"
+
 # Assets
 gem 'rails_12factor', group: :production
 
