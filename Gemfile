@@ -62,6 +62,9 @@ gem 'rails-assets-ScrollToFixed'
 # ScrollIt
 # gem 'rails-assets-ScrollIt.js'
 
+# Unicorn
+ gem 'unicorn'
+
 # Assets
 gem 'rails_12factor', group: :production
 
