@@ -80,6 +80,9 @@ gem 'rails-assets-vanilla-masker'
 # jQuery Validation
 gem 'rails-assets-jquery-validation'
 
+# NProgress
+gem 'rails-assets-nprogress'
+
 # Only for dev and test
 group :development, :test do
 gem 'foreman'
