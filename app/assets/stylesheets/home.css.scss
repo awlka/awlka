@@ -759,6 +759,11 @@ textarea {
 
 .contact-errors__container {
 
+  @include media($mobile) {
+    position: relative;
+    margin-top: 20px;
+  }
+
   @include media($desktop-x) {
     position: relative;
     bottom: em(45);
