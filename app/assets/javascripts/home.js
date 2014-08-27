@@ -110,15 +110,11 @@ var app = (function (window, document, undefined) {
     var email = $('#contact-email');
     var msg = $('#contact-message');
 
-    console.log(dataForm);
-    console.log(name + '' + email + '' + msg);
-
     $(form).on('ajax:beforeSend', function () {
-      if (!$(name).val() && !$(email).val() && !$(msg).val()) {
+      if (!$(name).val() || !$(email).val() || !$(msg).val()) {
         alert('Noooo!');
         return false;
       }
-      app.validateForm();
       console.log('Let\'s do it ');
     }).on('ajax:success', function () {
       console.log('200');
@@ -139,17 +135,6 @@ var app = (function (window, document, undefined) {
   app.inputMasks = function () {
     var phone = new VanillaMasker();
     phone.maskPattern(document.getElementById('contact-phone'), '(99) 999999999');
-  };
-
-  app.validateForm = function () {
-    judge.validate(document.getElementById('contact_name'), {
-      valid: function () {
-        alert('Ok!');
-      },
-      invalid: function () {
-        alert('Not ok!');
-      }
-    });
   };
 
   return app.init();
