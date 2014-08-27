@@ -77,6 +77,9 @@ gem 'devise'
 # Vanilla Masker
 gem 'rails-assets-vanilla-masker'
 
+# Validate
+gem 'judge'
+
 # Only for dev and test
 group :development, :test do
 gem 'foreman'
