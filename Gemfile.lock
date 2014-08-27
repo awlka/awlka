@@ -66,6 +66,9 @@ GEM
     json (1.8.1)
     judge (2.0.4)
       rails (>= 3.1)
+    judge-simple_form (0.4.0)
+      judge (~> 2.0)
+      simple_form (>= 2.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -160,6 +163,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   judge
+  judge-simple_form
   mail_form
   neat
   pg

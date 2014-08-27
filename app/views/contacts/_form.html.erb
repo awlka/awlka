@@ -1,5 +1,6 @@
-<%= simple_form_for @contact, :html => {:class => 'contact-form'}, :remote => true do |f| %>
-  <input type="text" name="contact[name]" placeholder="Nome" id="contact-name">
+<%= simple_form_for @contact, :builder => Judge::FormBuilder, :html => {:class => 'contact-form'}, :remote => true do |f| %>
+  <%= f.text_field :name, :validate => true, :placeholder => 'Nome', :html => {:id => 'contact_name'} %>
+  <!-- <input type="text" name="contact[name]" placeholder="Nome" id="contact-name"> -->
   <input type="email" name="contact[email]" placeholder="E-mail" id="contact-email">
   <input type="tel" name="contact[telephone]" placeholder="Telefone" id="contact-phone">
   <textarea name="contact[message]" placeholder="Mensagem" id="contact-message"></textarea>

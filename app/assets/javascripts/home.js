@@ -106,11 +106,22 @@ var app = (function (window, document, undefined) {
     var form = $('.contact-form'),
       dataForm = $(form).serialize();
 
-    $(form).on('ajax:success', function () {
-      console.log('200');
-    }).on('ajax:beforeSend', function () {
+    var name = $('#contact_name');
+    var email = $('#contact-email');
+    var msg = $('#contact-message');
+
+    console.log(dataForm);
+    console.log(name + '' + email + '' + msg);
+
+    $(form).on('ajax:beforeSend', function () {
+      if (!$(name).val() && !$(email).val() && !$(msg).val()) {
+        alert('Noooo!');
+        return false;
+      }
       app.validateForm();
       console.log('Let\'s do it ');
+    }).on('ajax:success', function () {
+      console.log('200');
     }).on('ajax:aborted:required', function () {
       console.log('Empty!');
     }).on('ajax:error', function (evt, xhr, status, error) {
@@ -131,8 +142,6 @@ var app = (function (window, document, undefined) {
   };
 
   app.validateForm = function () {
-    var name = $('#contact_name');
-
     judge.validate(document.getElementById('contact_name'), {
       valid: function () {
         alert('Ok!');
