@@ -1,4 +1,4 @@
-<%= simple_form_for @contact :html => {:class => 'contact-form'}, :remote => true do |f| %>
+<%= simple_form_for @contact, :html => {:class => 'contact-form'}, :remote => true do |f| %>
   <input type="text" name="contact[name]" placeholder="Nome" id="contact-name">
   <input type="email" name="contact[email]" placeholder="E-mail" id="contact-email">
   <input type="tel" name="contact[telephone]" placeholder="Telefone" id="contact-phone">
