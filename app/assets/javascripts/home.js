@@ -145,7 +145,7 @@ var app = (function (window, document, undefined) {
    */
   app.validateForm = function (form) {
     form.validate({
-      errorLabelContainer: $('.contact-errors__container'),
+      errorLabelContainer: $('.contact-message__errors'),
       rules: {
         'contact[name]': {
           required: true

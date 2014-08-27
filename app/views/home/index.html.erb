@@ -212,9 +212,15 @@
       <div data-scroll-reveal="enter from the bottom after .2s" class="contact-box contact-alpha">
         <p>Se você se interessou pelo nosso trabalho, deseja solicitar um orçamento ou quer saber mais, envie uma mensagem:</p>
 
+
         <%= render 'contacts/new' %>
 
-        <div class="contact-errors__container"></div>
+        <div class="contact-message__errors"></div>
+
+        <div class="contact-message__success is-hidden">
+          <p class="contact-message__title">Mensagem enviada com sucesso!</p>
+          <span class="contact-message__back">Enviar outra mensagem</span>
+        </div>
 
       </div>
 

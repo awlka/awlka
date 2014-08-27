@@ -37,3 +37,18 @@ $savelives-green: #1daabf;
   visibility: hidden;
   @include transform(rotate 0deg);
 }
+
+.is-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.is-visible {
+  display: block;
+  visibility: visible;
+}
+
+.is-visible-x {
+  display: inline-block;
+  visibility: visible;
+}

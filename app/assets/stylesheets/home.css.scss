@@ -757,9 +757,33 @@ textarea {
   }
 }
 
-.contact-errors__container {
+.contact-message__success {
+
+  @include media($desktop-x) {
+    position: absolute;
+    margin-top: em(80);
+    text-align: center;
+    p {
+      font-size: rem(22);
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    span {
+      font-size: rem(16);
+      cursor: pointer;
+    }
+  }
+
+}
+
+.contact-message__errors {
 
   @include media($mobile) {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  @include media($tablet) {
     position: relative;
     margin-top: 20px;
   }
