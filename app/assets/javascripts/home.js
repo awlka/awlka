@@ -108,11 +108,13 @@ var app = (function (window, document, undefined) {
 
     $(form).on('ajax:success', function () {
       console.log('200');
+    }).on('ajax:beforeSend', function () {
+      app.validateForm();
+      console.log('Let\'s do it ');
+    }).on('ajax:aborted:required', function () {
+      console.log('Empty!');
     }).on('ajax:error', function (evt, xhr, status, error) {
-      var errors = xhr.responseJSON.error
-      for (message in errors) {
-        console.log(errors[message]);
-      }
+      console.log('Error!');
     }).on('ajax:complete', function () {
       console.log('Yo!');
     });
@@ -126,6 +128,19 @@ var app = (function (window, document, undefined) {
   app.inputMasks = function () {
     var phone = new VanillaMasker();
     phone.maskPattern(document.getElementById('contact-phone'), '(99) 999999999');
+  };
+
+  app.validateForm = function () {
+    var name = $('#contact_name');
+
+    judge.validate(document.getElementById('contact_name'), {
+      valid: function () {
+        alert('Ok!');
+      },
+      invalid: function () {
+        alert('Not ok!');
+      }
+    });
   };
 
   return app.init();
