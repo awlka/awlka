@@ -679,6 +679,10 @@
   margin-top: em(15);
   padding: em(8) em(30);
 
+  &:disabled {
+    color: lighten($awlka-black, 10);
+  }
+
   span {
     color: $awlka-black;
     font-weight: 400;
