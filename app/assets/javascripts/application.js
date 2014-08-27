@@ -15,8 +15,6 @@
 //= require viewport-units-buggyfill
 //= require scrollReveal.js
 //= require ScrollToFixed
-//= require underscore
-//= require judge
 //= require ../../../vendor/assets/javascripts/scrollit
 //= require ../../../vendor/assets/javascripts/vanilla-masker
 //= require_tree .
