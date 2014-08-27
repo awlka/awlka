@@ -721,7 +721,7 @@ input,
 textarea {
   width: 100%;
   color: $awlka-black;
-  border: 0;
+  border: 2px solid $awlka-white;
   outline: none;
   padding: em(10) em(15);
   border-radius: 0;
@@ -731,6 +731,11 @@ textarea {
   &:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px $awlka-white inset;
     -webkit-text-fill-color: $awlka-black;
+  }
+
+  &.error {
+    border: 2px solid $awlka-pink;
+    color: $awlka-pink;
   }
 
   @include media($desktop) {
@@ -749,6 +754,16 @@ textarea {
 .contact-alpha {
   p {
     margin: 0 0 em(15) 0;
+  }
+}
+
+.contact-errors__container {
+
+  @include media($desktop-x) {
+    position: relative;
+    bottom: em(45);
+    display: inline-block;
+    width: 70%;
   }
 }
 

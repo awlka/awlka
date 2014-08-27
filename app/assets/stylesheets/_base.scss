@@ -75,3 +75,12 @@ textarea {
     color: $awlka-black;
   }
 }
+
+label {
+  &.error {
+    color: $awlka-white;
+    font-size: rem(14);
+    font-weight: 300;
+    display: block;
+  }
+}
