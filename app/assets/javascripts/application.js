@@ -15,6 +15,7 @@
 //= require viewport-units-buggyfill
 //= require scrollReveal.js
 //= require ScrollToFixed
+//= require jquery-validation
 //= require ../../../vendor/assets/javascripts/scrollit
 //= require ../../../vendor/assets/javascripts/vanilla-masker
 //= require_tree .
