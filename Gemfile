@@ -74,9 +74,6 @@ gem 'simple_form'
 # Devise
 gem 'devise'
 
-# Vanilla Masker
-gem 'rails-assets-vanilla-masker'
-
 # jQuery Validation
 gem 'rails-assets-jquery-validation'
 
