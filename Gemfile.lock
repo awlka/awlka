@@ -95,6 +95,8 @@ GEM
     rails-assets-ScrollToFixed (1.0.6)
       rails-assets-jquery (>= 1.6)
     rails-assets-jquery (2.1.1)
+    rails-assets-jquery-validation (1.13.0)
+      rails-assets-jquery (>= 1.6.4)
     rails-assets-retreat-hell (1.0.1)
     rails-assets-scrollReveal.js (0.1.3)
     rails-assets-vanilla-masker (0.3.0)
@@ -162,6 +164,7 @@ DEPENDENCIES
   pg
   rails (= 4.1.4)
   rails-assets-ScrollToFixed
+  rails-assets-jquery-validation
   rails-assets-retreat-hell
   rails-assets-scrollReveal.js
   rails-assets-vanilla-masker
