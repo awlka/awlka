@@ -16,6 +16,7 @@
 //= require scrollReveal.js
 //= require ScrollToFixed
 //= require jquery-validation
+//= require nprogress
 //= require ../../../vendor/assets/javascripts/scrollit
 //= require ../../../vendor/assets/javascripts/vanilla-masker
 //= require_tree .

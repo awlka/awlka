@@ -760,7 +760,7 @@ textarea {
 .contact-message__success {
 
   @include media($desktop-x) {
-    position: absolute;
+    position: relative;
     margin-top: em(80);
     text-align: center;
     p {

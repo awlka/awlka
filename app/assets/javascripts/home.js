@@ -24,6 +24,7 @@ var app = (function (window, document, undefined) {
     this.backToTop();
     this.toggleMenu();
     this.contactSubmit();
+    this.refreshForm();
   };
 
   /*
@@ -114,11 +115,17 @@ var app = (function (window, document, undefined) {
 
     $(form).on('ajax:beforeSend', function () {
       if (!$(name).val() || !$(email).val() || !$(msg).val()) {
-        alert('Noooo!');
         return false;
+      } else {
+        NProgress.start();
       }
       console.log('Let\'s do it ');
     }).on('ajax:success', function () {
+      NProgress.done();
+      $('.contact-container__title').addClass('is-hidden');
+      $('.contact-container__subtitle').addClass('is-hidden');
+      $('.contact-form').addClass('is-hidden');
+      $('.contact-message__success').removeClass('is-hidden').addClass('is-visible-x');
       console.log('200');
     }).on('ajax:aborted:required', function () {
       console.log('Empty!');
@@ -173,6 +180,26 @@ var app = (function (window, document, undefined) {
       success: function (element) {
         element.text('');
       }
+    });
+  };
+
+  app.refreshForm = function () {
+    var form = $('.contact-form');
+    var successContent = $('.contact-message__success');
+    var refreshMe = $('.contact-message__back');
+    var name = $('#contact-name');
+    var email = $('#contact-email');
+    var phone = $('#contact-phone');
+    var msg = $('#contact-message');
+
+    $(refreshMe).on('click', function () {
+      successContent.addClass('is-hidden');
+      form.removeClass('is-hidden');
+      $('.contact-container__title').removeClass('is-hidden');
+      $('.contact-container__subtitle').removeClass('is-hidden');
+      $(name).val('');
+      $(email).val('');
+      $(msg).val('');
     });
   };
 
