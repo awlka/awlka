@@ -102,13 +102,15 @@ var app = (function (window, document, undefined) {
    * Submit contact form
    */
   app.contactSubmit = function () {
-    this.inputMasks();
     var form = $('.contact-form'),
       dataForm = $(form).serialize();
 
-    var name = $('#contact_name');
+    var name = $('#contact-name');
     var email = $('#contact-email');
     var msg = $('#contact-message');
+
+    this.inputMasks();
+    this.validateForm(form);
 
     $(form).on('ajax:beforeSend', function () {
       if (!$(name).val() || !$(email).val() || !$(msg).val()) {
@@ -135,6 +137,43 @@ var app = (function (window, document, undefined) {
   app.inputMasks = function () {
     var phone = new VanillaMasker();
     phone.maskPattern(document.getElementById('contact-phone'), '(99) 999999999');
+  };
+
+  /*
+   * Validate contact form
+   * Using https://github.com/jzaefferer/jquery-validation
+   */
+  app.validateForm = function (form) {
+    form.validate({
+      errorLabelContainer: $('.contact-errors__container'),
+      rules: {
+        'contact[name]': {
+          required: true
+        },
+        'contact[email]': {
+          required: true,
+          email: true
+        },
+        'contact[message]': {
+          required: true
+        }
+      },
+      messages: {
+        'contact[name]': {
+          required: '* Digite o seu nome.'
+        },
+        'contact[email]': {
+          required: '* Digite o seu endereço de e-mail.',
+          email: '* Digite um e-mail válido.'
+        },
+        'contact[message]': {
+          required: '* Digite a sua mensagem.'
+        }
+      },
+      success: function (element) {
+        element.text('');
+      }
+    });
   };
 
   return app.init();
