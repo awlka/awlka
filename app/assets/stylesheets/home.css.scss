@@ -387,6 +387,7 @@
   @include media($desktop-x) {
     width: em(160);
     height: em(160);
+    @include transition(all .2s ease-in-out);
 
     &:hover {
       rect,
@@ -459,6 +460,7 @@
 .hwd-symbols {
 
   @include media($desktop-x) {
+    @include transition(all .2s ease-in-out);
     &:hover {
       .hwd-circle {
         fill: $awlka-white;
@@ -579,8 +581,9 @@
     color: $awlka-white;
     font-weight: 600;
     text-decoration: none;
+    @include transition(all .2s ease-in-out);
     &:hover {
-      @include transition(all .6s ease-in-out);
+      @include transition(all .2s ease-in-out);
       text-decoration: underline;
     }
   }
