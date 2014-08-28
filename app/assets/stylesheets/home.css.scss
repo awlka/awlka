@@ -778,6 +778,9 @@ textarea {
     span {
       font-size: rem(16);
       cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
