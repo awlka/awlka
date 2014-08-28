@@ -267,7 +267,7 @@
 }
 
 .site-nav__item {
-  @include transition (all 0.02s ease-in-out);
+  @include transition(all 0.02s ease-in-out);
 
   &:hover {
 
@@ -391,14 +391,14 @@
     &:hover {
       rect,
       .wwd-circle {
-        @include transition (all .2s ease-in-out);
+        @include transition(all .2s ease-in-out);
         fill: $awlka-black;
       }
       rect {
         stroke: $awlka-white;
       }
       path {
-        @include transition (all .2s ease-in-out);
+        @include transition(all .2s ease-in-out);
         fill: $awlka-white;
       }
     }
@@ -462,68 +462,68 @@
     &:hover {
       .hwd-circle {
         fill: $awlka-white;
-        @include transition (all .2s ease-in-out);
+        @include transition(all .2s ease-in-out);
       }
       .hwd-p {
         fill: $awlka-black;
       }
       .hwd-pr2 {
-        @include transition (all .4ms ease-in-out);
+        @include transition(all .4ms ease-in-out);
       }
       .hwd-pr3 {
-        @include transition (all .10ms ease-in-out);
+        @include transition(all .10ms ease-in-out);
       }
       .hwd-pr4 {
-        @include transition (all .1s ease-in-out);
+        @include transition(all .1s ease-in-out);
       }
       .hwd-pr5 {
-        @include transition (all .3s ease-in-out);
+        @include transition(all .3s ease-in-out);
       }
       .hwd-pr6 {
-        @include transition (all .5s ease-in-out);
+        @include transition(all .5s ease-in-out);
       }
       .hwd-pr7 {
-        @include transition (all .7s ease-in-out);
+        @include transition(all .7s ease-in-out);
       }
       .hwd-pr8 {
-        @include transition (all .9s ease-in-out);
+        @include transition(all .9s ease-in-out);
       }
       .hwd-pr9 {
-        @include transition (all 1.1s ease-in-out);
+        @include transition(all 1.1s ease-in-out);
       }
       .hwd-pr10 {
-        @include transition (all 1.3s ease-in-out);
+        @include transition(all 1.3s ease-in-out);
       }
       .hwd-pr11 {
-        @include transition (all 1.5s ease-in-out);
+        @include transition(all 1.5s ease-in-out);
       }
 
       .hwd-ga__p1 {
-        @include transition (all .1s ease-in-out);
+        @include transition(all .1s ease-in-out);
       }
       .hwd-ga__p2 {
-        @include transition (all .3s ease-in-out);
+        @include transition(all .3s ease-in-out);
       }
       .hwd-ga__p3 {
-        @include transition (all .5s ease-in-out);
+        @include transition(all .5s ease-in-out);
       }
       .hwd-ga__p4 {
-        @include transition (all .7s ease-in-out);
+        @include transition(all .7s ease-in-out);
       }
       .hwd-ga__p5 {
-        @include transition (all .9s ease-in-out);
+        @include transition(all .9s ease-in-out);
       }
       .hwd-ga__p6 {
-        @include transition (all 1.1s ease-in-out);
+        @include transition(all 1.1s ease-in-out);
       }
       .hwd-ga__p7 {
-        @include transition (all 1.3s ease-in-out);
+        @include transition(all 1.3s ease-in-out);
       }
 
       .hwd-seo__path,
       .hwd-host__path {
         fill: $awlka-black;
-        @include transition (all .5s ease-in-out);
+        @include transition(all .5s ease-in-out);
       }
     }
   }
@@ -580,7 +580,7 @@
     font-weight: 600;
     text-decoration: none;
     &:hover {
-      @include transition (all .6s ease-in-out);
+      @include transition(all .6s ease-in-out);
       text-decoration: underline;
     }
   }
@@ -618,7 +618,7 @@
 
 .portfolio-card {
   position: relative;
-  @include transition (all .6s ease-in-out);
+  @include transition(all .6s ease-in-out);
   @include transform-style(preserve-3d);
 
   @include media($desktop-x) {
@@ -840,7 +840,7 @@ textarea {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
-      @include transition (all .6s ease-in-out);
+      @include transition(all .6s ease-in-out);
     }
   }
 }
