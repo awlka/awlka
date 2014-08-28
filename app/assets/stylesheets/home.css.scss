@@ -681,6 +681,7 @@
   border: 0;
   margin-top: em(15);
   padding: em(8) em(30);
+  @include transition(all, .6s ease-in-out);
 
   &:disabled {
     color: lighten($awlka-black, 10);
@@ -693,7 +694,7 @@
 
   span {
     color: $awlka-black;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
@@ -708,7 +709,6 @@
   @include media($desktop-x) {
     float: right;
     &:hover {
-      @include transition(all, .6s ease-in-out);
       background: darken($awlka-white, 20);
     }
   }
