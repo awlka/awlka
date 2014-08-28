@@ -686,6 +686,11 @@
     color: lighten($awlka-black, 10);
   }
 
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+
   span {
     color: $awlka-black;
     font-weight: 400;
