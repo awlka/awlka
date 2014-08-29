@@ -643,7 +643,7 @@
 }
 
 .portfolio-card__front {
-  background: $savelives-green;
+  background: $awlka-pink;
   z-index: 2;
 }
 
@@ -651,6 +651,14 @@
   background: $awlka-black;
   color: $awlka-white;
   @include transform(rotateY(180deg));
+}
+
+.portfolio-card__cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 
