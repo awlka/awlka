@@ -40,7 +40,7 @@ var app = (function (window, document, undefined) {
    * Using: https://github.com/julianlloyd/scrollReveal.js
    */
   app.onScrollAnimation = function () {
-    window.scrollReveal = new scrollReveal({reset:true});
+    window.scrollReveal = new scrollReveal();
   };
 
   /*
