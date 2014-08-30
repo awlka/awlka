@@ -65,9 +65,6 @@ gem 'rails-assets-jquery-validation'
 # NProgress
 gem 'rails-assets-nprogress'
 
-# Owl Carousel
-gem 'rails-assets-owl.carousel'
-
 # Unicorn
  gem 'unicorn'
 
