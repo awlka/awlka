@@ -19,4 +19,5 @@
 //= require nprogress
 //= require ../../../vendor/assets/javascripts/scrollit
 //= require ../../../vendor/assets/javascripts/vanilla-masker
+//= require ../../../vendor/assets/javascripts/owl
 //= require_tree .
