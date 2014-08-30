@@ -601,6 +601,7 @@
   }
 
   @include media($desktop-x) {
+    margin-top: em(50);
     min-height: em(800);
   }
 }
