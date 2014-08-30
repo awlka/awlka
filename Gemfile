@@ -59,8 +59,14 @@ gem 'rails-assets-scrollReveal.js'
 # scrollToFixed
 gem 'rails-assets-ScrollToFixed'
 
-# ScrollIt
-# gem 'rails-assets-ScrollIt.js'
+# jQuery Validation
+gem 'rails-assets-jquery-validation'
+
+# NProgress
+gem 'rails-assets-nprogress'
+
+# Owl Carousel
+gem 'rails-assets-owl.carousel'
 
 # Unicorn
  gem 'unicorn'
@@ -81,11 +87,6 @@ gem 'simple_form'
 # Devise
 gem 'devise'
 
-# jQuery Validation
-gem 'rails-assets-jquery-validation'
-
-# NProgress
-gem 'rails-assets-nprogress'
 
 # Only for dev and test
 group :development, :test do
