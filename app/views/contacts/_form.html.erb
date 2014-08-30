@@ -1,7 +1,7 @@
 <%= simple_form_for @contact, :html => {:class => 'contact-form'}, :remote => true do |f| %>
   <input type="text" name="contact[name]" placeholder="Nome" id="contact-name">
   <input type="email" name="contact[email]" placeholder="E-mail" id="contact-email">
-  <input type="tel" name="contact[telephone]" placeholder="Telefone" id="contact-phone">
+  <input type="tel" name="contact[telephone]" placeholder="Telefone (Opcional)" id="contact-phone">
   <textarea name="contact[message]" placeholder="Mensagem" id="contact-message"></textarea>
   <button type="submit" class="btn-contact__send" data-disable-with="Aguarde..."><span>Enviar</span></button>
 <% end %>
