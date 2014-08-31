@@ -858,9 +858,9 @@ textarea {
   a {
     color: $awlka-white;
     text-decoration: none;
+    @include transition(all .2s ease-in-out);
     &:hover {
       text-decoration: underline;
-      @include transition(all .6s ease-in-out);
     }
   }
 }
