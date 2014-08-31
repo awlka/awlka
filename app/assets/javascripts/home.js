@@ -25,7 +25,6 @@ var app = (function (window, document, undefined) {
     this.toggleMenu();
     this.contactSubmit();
     this.refreshForm();
-    // this.portfolioCarousel();
   };
 
   /*
@@ -206,21 +205,6 @@ var app = (function (window, document, undefined) {
       $(email).val('');
       $(msg).val('');
     });
-  };
-
-  /*
-   * Portfolio Carousel
-   * Using: https://github.com/OwlFonk/OwlCarousel2
-   */
-  app.portfolioCarousel = function () {
-
-    $('.portfolio-list').owlCarousel({
-      items: 3,
-      itemsDesktop: [1000, 3],
-      itemsDesktopSmall: [900, 2],
-      itemsTablet: [600, 1]
-    });
-
   };
 
   return app.init();
