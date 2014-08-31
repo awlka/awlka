@@ -873,16 +873,19 @@ textarea {
 .social-icons__img {
   width: em(42);
   height: em(42);
-  @include transition(all .2s ease-in-out);
+  &:hover {
+    path {
+      @include transition(all .2s ease-in-out);
+      fill: #FFF;
+    }
+  }
 }
 
 .icon-fb {
   &:hover {
     circle {
+      @include transition(all .4s ease-in-out);
       fill: #3D5B98;
-    }
-    path {
-      fill: #FFF;
     }
   }
 }
@@ -890,10 +893,8 @@ textarea {
 .icon-gp {
   &:hover {
     circle {
+      @include transition(all .4s ease-in-out);
       fill: #DD4B39;
-    }
-    path {
-      fill: #FFF;
     }
   }
 }
@@ -901,10 +902,8 @@ textarea {
 .icon-in {
   &:hover {
     circle {
+      @include transition(all .4s ease-in-out);
       fill: #0976B4;
-    }
-    path {
-      fill: #FFF;
     }
   }
 }
@@ -912,10 +911,8 @@ textarea {
 .icon-tw {
   &:hover {
     circle {
+      @include transition(all .4s ease-in-out);
       fill: #55ACEE;
-    }
-    path {
-      fill: #FFF;
     }
   }
 }
