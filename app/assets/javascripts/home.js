@@ -25,6 +25,7 @@ var app = (function (window, document, undefined) {
     this.toggleMenu();
     this.contactSubmit();
     this.refreshForm();
+    this.portfolioCarousel();
   };
 
   /*
@@ -139,7 +140,7 @@ var app = (function (window, document, undefined) {
 
   /*
    * Input mask
-   * Using https://github.com/BankFacil/vanilla-masker
+   * Using: https://github.com/BankFacil/vanilla-masker
    */
   app.inputMasks = function () {
     var phone = new VanillaMasker();
@@ -148,7 +149,7 @@ var app = (function (window, document, undefined) {
 
   /*
    * Validate contact form
-   * Using https://github.com/jzaefferer/jquery-validation
+   * Using: https://github.com/jzaefferer/jquery-validation
    */
   app.validateForm = function (form) {
     form.validate({
@@ -183,6 +184,10 @@ var app = (function (window, document, undefined) {
     });
   };
 
+  /*
+   * Allow to refresh the form after send
+   * TODO: Improve this
+   */
   app.refreshForm = function () {
     var form = $('.contact-form');
     var successContent = $('.contact-message__success');
@@ -201,6 +206,18 @@ var app = (function (window, document, undefined) {
       $(email).val('');
       $(msg).val('');
     });
+  };
+
+  /*
+   * Portfolio Carousel
+   * Using: https://github.com/OwlFonk/OwlCarousel2
+   */
+  app.portfolioCarousel = function () {
+
+    $('.portfolio-list').owlCarousel({
+      items: 3
+    });
+
   };
 
   return app.init();
