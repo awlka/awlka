@@ -610,11 +610,14 @@
   @extend .cf;
   -ms-perspective: 1000;
   @include perspective(1000);
+  // height: em(300);
 
   @include media($desktop-x) {
+    display: block;
     @include span-columns(4);
     @include omega(3n);
     height: em(300);
+    // width: 100%;
     margin-top: em(10);
     margin-bottom: em(10);
   }

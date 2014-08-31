@@ -25,7 +25,7 @@ var app = (function (window, document, undefined) {
     this.toggleMenu();
     this.contactSubmit();
     this.refreshForm();
-    this.portfolioCarousel();
+    // this.portfolioCarousel();
   };
 
   /*
@@ -215,7 +215,10 @@ var app = (function (window, document, undefined) {
   app.portfolioCarousel = function () {
 
     $('.portfolio-list').owlCarousel({
-      items: 3
+      items: 3,
+      itemsDesktop: [1000, 3],
+      itemsDesktopSmall: [900, 2],
+      itemsTablet: [600, 1]
     });
 
   };
