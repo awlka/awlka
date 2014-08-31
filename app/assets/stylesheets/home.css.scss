@@ -873,4 +873,49 @@ textarea {
 .social-icons__img {
   width: em(42);
   height: em(42);
+  @include transition(all .2s ease-in-out);
+}
+
+.icon-fb {
+  &:hover {
+    circle {
+      fill: #3D5B98;
+    }
+    path {
+      fill: #FFF;
+    }
+  }
+}
+
+.icon-gp {
+  &:hover {
+    circle {
+      fill: #DD4B39;
+    }
+    path {
+      fill: #FFF;
+    }
+  }
+}
+
+.icon-in {
+  &:hover {
+    circle {
+      fill: #0976B4;
+    }
+    path {
+      fill: #FFF;
+    }
+  }
+}
+
+.icon-tw {
+  &:hover {
+    circle {
+      fill: #55ACEE;
+    }
+    path {
+      fill: #FFF;
+    }
+  }
 }
