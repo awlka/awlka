@@ -109,10 +109,17 @@
 
 .awlka-subtitle {
   margin: 0;
-  font-size: rem(18);
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @include media($desktop-x) {
+    font-size: rem(16);
+  }
+
+  @include media($desktop-x) {
+    font-size: rem(18);
+  }
 }
 
 .awlka-logo__ {
