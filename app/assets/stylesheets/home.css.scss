@@ -597,6 +597,7 @@
   }
 
   @include media($tablet) {
+    margin-top: em(50);
     min-height: em(600);
   }
 
@@ -608,16 +609,27 @@
 
 .portfolio-list__item {
   @extend .cf;
+  display: block;
   -ms-perspective: 1000;
   @include perspective(1000);
-  // height: em(300);
+
+  @include media($mobile) {
+    position: relative;
+    margin-bottom: 300px;
+    width: em(300);
+    height: auto;
+    margin: auto;
+  }
+
+  @include media($tablet) {
+    @include span-columns(4);
+    // @include omega();
+  }
 
   @include media($desktop-x) {
-    display: block;
     @include span-columns(4);
     @include omega(3n);
     height: em(300);
-    // width: 100%;
     margin-top: em(10);
     margin-bottom: em(10);
   }
@@ -627,6 +639,20 @@
   position: relative;
   @include transition(all .6s ease-in-out);
   @include transform-style(preserve-3d);
+
+  @include media($mobile) {
+    margin-bottom: 300px;
+    &:hover {
+      @include transform(rotateY(180deg));
+    }
+  }
+
+  @include media($tablet) {
+    margin-bottom: 320px;
+    &:hover {
+      @include transform(rotateY(180deg));
+    }
+  }
 
   @include media($desktop-x) {
     &:hover {
@@ -638,12 +664,26 @@
 .portfolio-card__back,
 .portfolio-card__front {
   position: absolute;
-  top: 0;
-  left: 0;
   @include backface-visibility(hidden);
   padding: em(20);
-  width: em(300);
-  height: em(300);
+
+  @include media($mobile) {
+    width: em(300);
+    height: em(300);
+    margin: auto;
+  }
+
+  @include media($tablet) {
+    @include span-columns(8);
+    height: 300px;
+  }
+
+  @include media($desktop-x) {
+    top: 0;
+    left: 0;
+    width: em(300);
+    height: em(300);
+  }
 }
 
 .portfolio-card__front {
@@ -663,6 +703,12 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.portfolio-card__savelives {
+  .portfolio-card__front {
+    background: $savelives-green;
+  }
 }
 
 
