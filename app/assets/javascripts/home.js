@@ -203,6 +203,7 @@ var app = (function (window, document, undefined) {
       $('.contact-container__subtitle').removeClass('is-hidden');
       $(name).val('');
       $(email).val('');
+      $(phone).val('');
       $(msg).val('');
     });
   };

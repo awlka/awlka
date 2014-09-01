@@ -928,8 +928,8 @@ textarea {
 }
 
 .social-icons__img {
-  width: em(42);
-  height: em(42);
+  width: em(50);
+  height: em(50);
   circle {
     @include transition(all .4s ease-in-out);
   }
