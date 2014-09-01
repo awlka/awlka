@@ -623,7 +623,7 @@
 
   @include media($tablet) {
     @include span-columns(4);
-    // @include omega();
+    @include omega(2n);
   }
 
   @include media($desktop-x) {
