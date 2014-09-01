@@ -54,14 +54,15 @@ body {
   border-radius: 0;
 }
 
-::-moz-selection {
-  background: transparent;
-  color: $awlka-green;
-}
-::selection {
-  background: transparent;
-  color: $awlka-green;
-}
+// TODO: Improve!
+// ::-moz-selection {
+//   background: transparent;
+//   color: $awlka-green;
+// }
+// ::selection {
+//   background: transparent;
+//   color: $awlka-green;
+// }
 
 ul {
   list-style: none;
