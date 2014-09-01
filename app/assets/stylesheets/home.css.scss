@@ -939,43 +939,23 @@ textarea {
   &:hover {
     path {
       @include transition(all .2s ease-in-out);
-      fill: #FFF;
+      fill: lighten($awlka-black, 30);
     }
   }
 }
 
 .icon-fb {
-  &:hover {
-    circle {
-      @include transition(all .4s ease-in-out);
-      fill: #3D5B98;
-    }
-  }
+
 }
 
 .icon-gp {
-  &:hover {
-    circle {
-      @include transition(all .4s ease-in-out);
-      fill: #DD4B39;
-    }
-  }
+
 }
 
 .icon-in {
-  &:hover {
-    circle {
-      @include transition(all .4s ease-in-out);
-      fill: #0976B4;
-    }
-  }
+
 }
 
 .icon-tw {
-  &:hover {
-    circle {
-      @include transition(all .4s ease-in-out);
-      fill: #55ACEE;
-    }
-  }
+
 }
