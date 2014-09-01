@@ -695,6 +695,7 @@
 .portfolio-card__front {
   background: $awlka-pink;
   z-index: 2;
+  @include transform(rotateY(0deg));
 }
 
 .portfolio-card__back {
@@ -795,6 +796,7 @@ textarea {
 
 input,
 textarea {
+  font-weight: 400;
   width: 100%;
   color: $awlka-black;
   border: 2px solid $awlka-white;
