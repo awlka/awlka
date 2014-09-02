@@ -31,6 +31,12 @@
   text-transform: uppercase;
 }
 
+.section-title,
+.wwd-subtitle,
+.hwd-subtitle {
+  margin: 28px 0;
+}
+
 /*------------------------------------*\
   #Presentation Container
 \*------------------------------------*/
@@ -433,6 +439,8 @@
 .hwd-box__title {
   font-size: rem(14);
   text-transform: uppercase;
+  margin-top: 2px;
+  margin-bottom: 27px;
 }
 
 .hwd-box {
@@ -459,7 +467,7 @@
     width: em(45);
     height: em(3);
     background: $awlka-white;
-    margin: auto;
+    margin: 0 auto 27px auto;
   }
 
 }
