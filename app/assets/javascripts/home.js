@@ -60,7 +60,7 @@ var app = (function (window, document, undefined) {
    * Using: https://github.com/bigspotteddog/ScrollToFixed
    */
   app.scrollToFixed = function () {
-    $('.main-header').scrollToFixed();
+    // $('.main-header').scrollToFixed();
   };
 
   /*
