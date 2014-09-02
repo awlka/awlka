@@ -16,8 +16,8 @@
 }
 
 .hwd {
-  background-attachment: fixed;
-  z-index: 3;
+  // background-attachment: fixed;
+  // z-index: 3;
 }
 
 .main-header,
@@ -671,14 +671,14 @@
 
   @include media($mobile) {
     margin-bottom: 300px;
-    &:hover {
+    &.portfolio-card__flipped {
       @include transform(rotateY(180deg));
     }
   }
 
   @include media($tablet) {
     margin-bottom: 320px;
-    &:hover {
+    &.portfolio-card__flipped {
       @include transform(rotateY(180deg));
     }
   }

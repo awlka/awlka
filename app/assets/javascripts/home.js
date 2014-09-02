@@ -25,7 +25,7 @@ var app = (function (window, document, undefined) {
     this.toggleMenu();
     this.contactSubmit();
     this.refreshForm();
-    this.portfolioCardFlip();
+    this.portfolioMobileCardFlip();
   };
 
   /*
@@ -212,11 +212,11 @@ var app = (function (window, document, undefined) {
   /*
     *
    */
-  app.portfolioCardFlip = function () {
+  app.portfolioMobileCardFlip = function () {
     if (this.isMobile()) {
-      // alert('Mobile!!!');
-    } else {
-      // alert('Erro!!');
+      $('.portfolio-card').on('click', function () {
+        $(this).toggleClass('portfolio-card__flipped');
+      });
     }
   };
 
