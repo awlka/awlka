@@ -65,9 +65,6 @@ gem 'rails-assets-jquery-validation'
 # NProgress
 gem 'rails-assets-nprogress'
 
-# Magic animations
-gem 'rails-assets-magic'
-
 # Unicorn
  gem 'unicorn'
 
