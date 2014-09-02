@@ -771,7 +771,7 @@
 }
 
 .btn-contact__send {
-  border: 0;
+  border: 1px solid transparent;
   margin-top: em(15);
   padding: em(8) em(30);
   @include transition(all, .6s ease-in-out);
@@ -805,9 +805,7 @@
       background: $awlka-black;
       border: 1px solid $awlka-white;
       span {
-        &:hover {
-          color: $awlka-white;
-        }
+        color: $awlka-white;
       }
     }
   }
