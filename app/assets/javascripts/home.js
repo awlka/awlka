@@ -18,7 +18,6 @@ var app = (function (window, document, undefined) {
    */
   app.init = function () {
     this.appendVideo();
-    this.iosViewportBug();
     this.onScrollAnimation();
     this.scrollToFixed();
     this.scrollIt();
@@ -37,14 +36,6 @@ var app = (function (window, document, undefined) {
     if (!this.isMobile()) {
       $('.presentation-container__video').append(theVideo);
     }
-  };
-
-  /*
-   * Fix iOS vh unit bug
-   * Using: viewportUnitsBuggyfill plugin https://github.com/rodneyrehm/viewport-units-buggyfill
-   */
-  app.iosViewportBug = function () {
-    // window.viewportUnitsBuggyfill.init();
   };
 
   /*
