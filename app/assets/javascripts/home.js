@@ -44,7 +44,7 @@ var app = (function (window, document, undefined) {
    * Using: viewportUnitsBuggyfill plugin https://github.com/rodneyrehm/viewport-units-buggyfill
    */
   app.iosViewportBug = function () {
-    window.viewportUnitsBuggyfill.init();
+    // window.viewportUnitsBuggyfill.init();
   };
 
   /*
@@ -60,7 +60,7 @@ var app = (function (window, document, undefined) {
    * Using: https://github.com/bigspotteddog/ScrollToFixed
    */
   app.scrollToFixed = function () {
-    // $('.main-header').scrollToFixed();
+    $('.main-header').scrollToFixed();
   };
 
   /*
