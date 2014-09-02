@@ -17,6 +17,7 @@ var app = (function (window, document, undefined) {
    * Initialize other methods
    */
   app.init = function () {
+    this.appendVideo();
     this.iosViewportBug();
     this.onScrollAnimation();
     this.scrollToFixed();
@@ -26,6 +27,16 @@ var app = (function (window, document, undefined) {
     this.contactSubmit();
     this.refreshForm();
     this.portfolioMobileCardFlip();
+  };
+
+  /*
+   * Append video on home if isn't Mobile
+   */
+  app.appendVideo = function () {
+    var theVideo = '<video autoplay loop poster="black-ink.jpg" width="100%" height="100%"><source src="black-ink.webm"></source><source src="black-ink-min.mp4"></source></video>';
+    if (!this.isMobile()) {
+      $('.presentation-container__video').append(theVideo);
+    }
   };
 
   /*
