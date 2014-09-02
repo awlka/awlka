@@ -383,6 +383,11 @@
 \*------------------------------------*/
 
 .wwd {
+  @include media($iphone-4) {
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-overflow-scrolling: touch;
+  }
+
   @include media($iphone-5) {
     -webkit-transform: translate3d(0,0,0);
     -webkit-overflow-scrolling: touch;
