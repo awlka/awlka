@@ -44,6 +44,11 @@ $savelives-green: #1daabf;
   visibility: hidden;
 }
 
+.is-hidden__animated {
+  @extend .is-hidden;
+  @include transition(visibility 0s linear, opacity 0.5s linear);
+}
+
 .is-visible {
   display: block;
   visibility: visible;
