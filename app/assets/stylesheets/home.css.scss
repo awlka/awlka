@@ -34,7 +34,16 @@
 .section-title,
 .wwd-subtitle,
 .hwd-subtitle {
-  margin: 28px 0;
+  margin-bottom: 28px;
+}
+
+.section-title {
+  margin-top: 0;
+}
+
+.wwd-subtitle,
+.hwd-subtitle {
+  margin-top: 28px;
 }
 
 /*------------------------------------*\
@@ -44,7 +53,7 @@
 .arrow-down {
   position: absolute;
   right: 0;
-  bottom: em(10);
+  bottom: em(27);
   left: 0;
   text-align: center;
   z-index: 3;
@@ -551,10 +560,6 @@
 .hwd-subtitle {
   font-size: rem(16);
   text-transform: uppercase;
-}
-
-.hwd-subtitle {
-  margin-top: em(50);
 }
 
 .rwd-section {
