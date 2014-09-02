@@ -177,10 +177,6 @@
   width: 100%;
   height: 100%;
   z-index: 99999;
-  @include media($iphone-5) {
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-overflow-scrolling: touch;
-  }
 }
 
 /*------------------------------------*\
@@ -385,6 +381,13 @@
 /*------------------------------------*\
   #What we do
 \*------------------------------------*/
+
+.wwd {
+  @include media($iphone-5) {
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-overflow-scrolling: touch;
+  }
+}
 
 .wwd-box {
   text-align: center;
