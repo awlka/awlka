@@ -778,6 +778,10 @@
 
   &:disabled {
     color: lighten($awlka-black, 10);
+    &:hover {
+      background: lighten($awlka-white, 10);
+      border: 1px solid lighten($awlka-white, 10);
+    }
   }
 
   &:focus {

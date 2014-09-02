@@ -123,7 +123,7 @@ var app = (function (window, document, undefined) {
       console.log('Let\'s do it ');
     }).on('ajax:success', function () {
       NProgress.done();
-      $('.contact-container__title').addClass('is-hidden');
+      $('.contact-container__title').addClass('is-hidden ');
       $('.contact-container__subtitle').addClass('is-hidden');
       $('.contact-form').addClass('is-hidden');
       $('.contact-message__success').removeClass('is-hidden').addClass('is-visible-x');
