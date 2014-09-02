@@ -15,6 +15,10 @@
   color: $awlka-white;
 }
 
+.hwd {
+  background-attachment: fixed;
+}
+
 .main-header,
 .wwd,
 .portfolio-container {
@@ -797,7 +801,13 @@
   @include media($desktop-x) {
     float: right;
     &:hover {
-      background: darken($awlka-white, 20);
+      background: $awlka-black;
+      border: 1px solid $awlka-white;
+      span {
+        &:hover {
+          color: $awlka-white;
+        }
+      }
     }
   }
 }

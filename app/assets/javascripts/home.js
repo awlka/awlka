@@ -25,6 +25,7 @@ var app = (function (window, document, undefined) {
     this.toggleMenu();
     this.contactSubmit();
     this.refreshForm();
+    this.portfolioCardFlip();
   };
 
   /*
@@ -206,6 +207,28 @@ var app = (function (window, document, undefined) {
       $(phone).val('');
       $(msg).val('');
     });
+  };
+
+  /*
+    *
+   */
+  app.portfolioCardFlip = function () {
+    if (this.isMobile()) {
+      alert('Mobile!!!');
+    } else {
+      alert('Erro!!');
+    }
+  };
+
+  /*
+    * Detect if is mobile
+   */
+  app.isMobile = function () {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      return true;
+    } else {
+      return false
+    }
   };
 
   return app.init();
