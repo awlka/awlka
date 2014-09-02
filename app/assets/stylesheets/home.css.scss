@@ -383,7 +383,7 @@
 
   @include media($desktop) {
     @include span-columns(6);
-    padding: em(40) 0 em(80) 0;
+    padding: em(40) 0 0 0;
 
     p {
       width: em(350);
