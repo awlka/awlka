@@ -51,7 +51,7 @@ gem 'rails-assets-retreat-hell'
 # gem 'rails-assets-normalize.css'
 
 # Viewport Units buggyfill
-gem 'rails-assets-viewport-units-buggyfill'
+# gem 'rails-assets-viewport-units-buggyfill'
 
 # scrollReveal
 gem 'rails-assets-scrollReveal.js'
