@@ -214,9 +214,9 @@ var app = (function (window, document, undefined) {
    */
   app.portfolioCardFlip = function () {
     if (this.isMobile()) {
-      alert('Mobile!!!');
+      // alert('Mobile!!!');
     } else {
-      alert('Erro!!');
+      // alert('Erro!!');
     }
   };
 
