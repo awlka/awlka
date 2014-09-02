@@ -210,7 +210,7 @@ var app = (function (window, document, undefined) {
   };
 
   /*
-    *
+    * Check if is mobile and flip portfolio cards!
    */
   app.portfolioMobileCardFlip = function () {
     if (this.isMobile()) {
