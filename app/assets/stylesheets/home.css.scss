@@ -41,9 +41,12 @@
   margin-top: 0;
 }
 
-.wwd-subtitle,
-.hwd-subtitle {
+.wwd-subtitle {
   margin-top: 28px;
+}
+
+.hwd-subtitle {
+  margin-top: 55px;
 }
 
 /*------------------------------------*\
@@ -564,7 +567,7 @@
 
 .rwd-section {
   position: relative;
-  margin-top: em(50);
+  margin-top: em(40);
 
   p {
     text-align: left;
@@ -622,7 +625,7 @@
   }
 
   @include media($desktop-x) {
-    margin-top: em(50);
+    margin-top: em(40);
     min-height: em(800);
   }
 }
