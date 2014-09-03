@@ -777,6 +777,38 @@ html[data-useragent*='iPad'] .main-content > section {
   }
 }
 
+.portfolio-action {
+  position: absolute;
+  z-index: 9;
+}
+
+.portfolio-action__more {
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio-action__back {
+  right: 12px;
+  bottom: 10px;
+}
+
+.portfolio-more,
+.portfolio-return {
+  path {
+    fill: $awlka-white;
+  }
+}
+
+.portfolio-more {
+  width: 40px;
+  height: 40px;
+}
+
+.portfolio-back {
+  width: 50px;
+  height: 50px;
+}
+
 
 /*------------------------------------*\
   #Contact
