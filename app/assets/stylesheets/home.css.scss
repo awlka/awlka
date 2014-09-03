@@ -731,6 +731,8 @@ html[data-useragent*='iPad'] .main-content > section {
   @include transform-style(preserve-3d);
   @include transition(all .6s ease-in-out);
   padding: em(20);
+  -webkit-box-shadow: 0 0 2px lighten($awlka-black, 20);
+  box-shadow: 0 0 2px lighten($awlka-black, 20);
 
   @include media($mobile) {
     width: em(300);
