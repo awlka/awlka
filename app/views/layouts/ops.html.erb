@@ -42,7 +42,12 @@
   <meta name="application-name" content="awlka">
 
   <style>
-
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
   </style>
 
   <%= csrf_meta_tags %>
