@@ -84,6 +84,9 @@ gem 'simple_form'
 # Devise
 gem 'devise'
 
+# New Relic
+gem 'newrelic_rpm'
+
 
 # Only for dev and test
 group :development, :test do
