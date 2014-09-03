@@ -382,6 +382,11 @@
   #What we do
 \*------------------------------------*/
 
+html[data-useragent*='iPad'] .main-content > section {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-overflow-scrolling: touch;
+}
+
 .wwd {
   @include media($iphone-4) {
     -webkit-transform: translate3d(0,0,0);

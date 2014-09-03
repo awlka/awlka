@@ -18,6 +18,7 @@ var app = (function (window, document, undefined) {
    */
   app.init = function () {
     this.appendVideo();
+    this.userAgent();
     this.onScrollAnimation();
     this.scrollToFixed();
     this.scrollIt();
@@ -36,6 +37,14 @@ var app = (function (window, document, undefined) {
     if (!this.isMobile()) {
       $('.presentation-container__video').append(theVideo);
     }
+  };
+
+  /*
+   * Detect User Agent
+   */
+  app.userAgent = function () {
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
   };
 
   /*
