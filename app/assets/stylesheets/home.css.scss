@@ -378,6 +378,20 @@
 
 }
 
+@include media($iphone-5) {
+  .main-header-iphone {
+    position: relative !important;
+    top: 0 !important;
+  }
+}
+
+@include media($iphone-4) {
+  .main-header-iphone {
+    position: relative !important;
+    top: 0 !important;
+  }
+}
+
 /*------------------------------------*\
   #What we do
 \*------------------------------------*/

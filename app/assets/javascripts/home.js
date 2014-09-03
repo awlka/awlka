@@ -27,6 +27,7 @@ var app = (function (window, document, undefined) {
     this.contactSubmit();
     this.refreshForm();
     this.portfolioMobileCardFlip();
+    this.iphoneFix();
   };
 
   /*
@@ -240,6 +241,24 @@ var app = (function (window, document, undefined) {
     } else {
       return false
     }
+  };
+
+  /*
+   * When user on iOS devices tap on input,textarea, change the header position
+   */
+  app.iphoneFix = function () {
+    var iphone4 = (window.screen.height == (960 / 2));
+    var iphone5 = (window.screen.height == (1136 / 2));
+
+    if (iphone4 || iphone5) {
+      $('input, textarea').on('focus', function () {
+        $('.main-header').addClass('main-header-iphone');
+      });
+
+      $('input, textarea').on('focusout', function () {
+        $('.main-header').removeClass('main-header-iphone');
+      });
+    };
   };
 
   return app.init();
