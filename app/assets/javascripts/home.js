@@ -229,6 +229,10 @@ var app = (function (window, document, undefined) {
       $('.portfolio-card').on('click', function () {
         $(this).toggleClass('portfolio-card__flipped');
       });
+    } else {
+      $('.portfolio-card').hover(function () {
+        $(this).toggleClass('portfolio-card__flipped');
+      });
     }
   };
 

@@ -715,7 +715,7 @@ html[data-useragent*='iPad'] .main-content > section {
   }
 
   @include media($desktop-x) {
-    &:hover {
+    &.portfolio-card__flipped {
       @include transform(rotateY(180deg));
     }
   }
