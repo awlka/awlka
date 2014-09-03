@@ -1,0 +1,38 @@
+.error404-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.error404-container__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+}
+
+.error404-title {
+  text-transform: uppercase;
+}
+
+.error404-description {
+  margin: 10px 0 80px 0;
+}
+
+.error404-go-back {
+  font-weight: 300;
+  color: $awlka-white;
+  text-decoration: none;
+  @include transition(all .6s ease-in-out);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.error404-title,
+.error404-description {
+  font-weight: 600;
+}
