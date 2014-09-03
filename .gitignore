@@ -42,5 +42,7 @@ config/secrets.yml
 
 *.DS_Store
 
+config/newrelic.yml
+
 .env
 # Procfile
