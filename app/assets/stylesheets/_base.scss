@@ -84,6 +84,7 @@ ul {
 
 input,
 textarea {
+  -webkit-appearance: none;
   @include placeholder {
     font-weight: 300;
     color: $awlka-black;
