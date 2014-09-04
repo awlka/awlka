@@ -478,6 +478,16 @@ html[data-useragent*='iPad'] .main-content > section {
   width: em(211);
   height: em(211);
   fill: $awlka-white;
+
+  @include media($iphone-4) {
+    width: em(160);
+    height: em(160);
+  }
+
+  @include media($iphone-5) {
+    width: em(160);
+    height: em(160);
+  }
 }
 
 .hwd-info {
@@ -609,7 +619,6 @@ html[data-useragent*='iPad'] .main-content > section {
   p {
     text-align: left;
 
-
     @include media($desktop-x) {
       position: absolute;
       top: 30%;
@@ -622,12 +631,16 @@ html[data-useragent*='iPad'] .main-content > section {
 
 .rwd-subtitle {
   position: relative;
-  bottom: em(90);
   margin-right: em(20);
   text-align: right;
   display: inline-block;
 
+  @include media($mobile) {
+    bottom: em(65);
+  }
+
   @include media($desktop-x) {
+    bottom: em(90);
   }
 
 }
