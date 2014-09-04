@@ -76,12 +76,21 @@
   }
 }
 
-.overlay {
+.overlay,
+.master-overlay {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.master-overlay {
+  background: $awlka-black;
+  z-index: 4;
+}
+
+.overlay {
   background: $awlka-black__t;
   z-index: 2;
 }
