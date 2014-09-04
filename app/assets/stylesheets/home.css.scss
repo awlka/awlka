@@ -628,9 +628,11 @@ html[data-useragent*='iPad'] .main-content > section {
   p {
 
     @include media($mobile) {
+      position: relative;
+      top: -10px;
       text-align: center;
-      br {
-        margin: 10px 0;
+      span {
+        margin: 2px 0;
         display: block;
       }
     }
