@@ -617,13 +617,21 @@ html[data-useragent*='iPad'] .main-content > section {
   margin-top: em(40);
 
   p {
-    text-align: left;
+
+    @include media($mobile) {
+      text-align: center;
+      br {
+        margin: 10px 0;
+        display: block;
+      }
+    }
 
     @include media($desktop-x) {
       position: absolute;
       top: 30%;
       right: 0;
       width: em(580);
+      text-align: left;
       display: inline-block;
     }
   }
@@ -965,6 +973,8 @@ textarea {
 .contact-message__success {
   position: relative;
   text-align: center;
+  overflow: hidden;
+  @include transition(opacity 1.0s ease-in 0s, width 2.0s ease-in 2s);
   p {
     font-size: rem(22);
     font-weight: 400;
