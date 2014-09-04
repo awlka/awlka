@@ -53,7 +53,10 @@ var app = (function (window, document, undefined) {
    * Using: https://github.com/julianlloyd/scrollReveal.js
    */
   app.onScrollAnimation = function () {
-    window.scrollReveal = new scrollReveal();
+    // Add ScrollReveal in Desktop only!
+    if (!this.isMobile()) {
+      window.scrollReveal = new scrollReveal();
+    }
   };
 
   /*

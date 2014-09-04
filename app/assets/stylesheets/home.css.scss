@@ -16,8 +16,8 @@
 }
 
 .hwd {
-  background-attachment: fixed;
-  z-index: 3;
+  // background-attachment: fixed;
+  // z-index: 3;
 }
 
 .main-header,
@@ -637,6 +637,10 @@ html[data-useragent*='iPad'] .main-content > section {
 
   @include media($mobile) {
     bottom: em(65);
+  }
+
+  @include media($tablet) {
+    bottom: em(70);
   }
 
   @include media($desktop-x) {
