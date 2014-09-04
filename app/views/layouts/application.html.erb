@@ -48,6 +48,6 @@
 
 <%= yield %>
 
-<%= javascript_include_tag 'application' %>
+<script><%= raw Rails.application.assets['application.js'].to_s %></script>
 </body>
 </html>
