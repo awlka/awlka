@@ -796,6 +796,10 @@ html[data-useragent*='iPad'] .main-content > section {
 
 .portfolio-more,
 .portfolio-return {
+  @include media($desktop-x) {
+    display: none;
+    visibility: hidden;
+  }
   path {
     fill: $awlka-white;
   }
