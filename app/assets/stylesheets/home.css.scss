@@ -1043,15 +1043,22 @@ textarea {
   width: em(50);
   height: em(50);
   circle {
+    stroke: transparent;
+    stroke-width: 2px;
     @include transition(all .4s ease-in-out);
   }
   path {
     @include transition(all .2s ease-in-out);
   }
   &:hover {
+    circle {
+      stroke: $awlka-white;
+      stroke-width: 3px;
+      fill: $awlka-black;
+    }
     path {
       @include transition(all .2s ease-in-out);
-      fill: lighten($awlka-black, 30);
+      fill: $awlka-white;
     }
   }
 }
