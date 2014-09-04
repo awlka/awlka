@@ -24,7 +24,7 @@
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
-  <style><%= raw Rails.application.assets["application.css"].to_s %></style>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -48,6 +48,6 @@
 
 <%= yield %>
 
-<script><%= raw Rails.application.assets['application.js'].to_s %></script>
+<%= javascript_include_tag 'application' %>
 </body>
 </html>
