@@ -37,7 +37,7 @@ var app = (function (window, document, undefined) {
     var theVideo = '<video autoplay loop poster="black-ink.jpg" width="100%" height="100%"><source src="black-ink.webm"></source><source src="black-ink-min.mp4"></source></video>';
     if (!this.isMobile()) {
       $('.presentation-container__video').append(theVideo);
-    }
+    };
   };
 
   /*
