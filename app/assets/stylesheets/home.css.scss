@@ -128,7 +128,6 @@
   text-align: center;
   @include transform(translate(-50%, -50%));
   z-index: 3;
-  @include transition(all .6s ease-in-out);
 }
 
 .awlka-subtitle {
