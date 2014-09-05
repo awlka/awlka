@@ -84,10 +84,6 @@
   left: 0;
   background: $awlka-black__t;
   z-index: 2;
-
-  @include media($mobile) {
-    background: lighten($awlka-black__t, 10);
-  }
 }
 
 .master-overlay {
