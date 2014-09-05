@@ -380,13 +380,13 @@
 
 .site-nav__link {
   color: $awlka-black;
-  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
 
   @include media($desktop-x) {
     padding-bottom: em(16);
     font-size: rem(14);
+    font-weight: 600;
   }
 }
 
