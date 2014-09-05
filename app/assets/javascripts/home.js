@@ -135,20 +135,16 @@ var app = (function (window, document, undefined) {
       } else {
         NProgress.start();
       }
-      console.log('Let\'s do it ');
     }).on('ajax:success', function () {
       NProgress.done();
       $('.contact-container__title').addClass('is-hidden');
       $('.contact-container__subtitle').addClass('is-hidden');
       $('.contact-form').addClass('is-hidden');
       $('.contact-message__success').removeClass('is-hidden').addClass('is-visible-x');
-      console.log('200');
     }).on('ajax:aborted:required', function () {
-      console.log('Empty!');
     }).on('ajax:error', function (evt, xhr, status, error) {
       alert('Ocorreu um erro no servidor, por favor, recarregue a página e tente novamente.');
     }).on('ajax:complete', function () {
-      console.log('Yo!');
     });
 
   };
