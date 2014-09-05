@@ -694,12 +694,12 @@ html[data-useragent*='iPad'] .main-content > section {
 
   @include media($tablet) {
     margin-top: em(50);
-    min-height: em(500);
+    min-height: em(400);
   }
 
   @include media($desktop-x) {
     margin-top: em(40);
-    min-height: em(500);
+    min-height: em(400);
   }
 }
 
