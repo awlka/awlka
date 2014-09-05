@@ -93,8 +93,42 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: $awlka-black;
+    background: $awlka-white;
     z-index: 4;
+  }
+}
+
+.master-overlay__content {
+  @include media($mobile) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @include media($tablet) {
+    display: none;
+    display: none;
+    visibility: hidden;
+  }
+
+  @include media($desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    text-align: center;
+    h1 {
+      font-size: rem(60);
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $awlka-black;
+    }
+  }
+}
+
+.master-overlay__logo {
+  svg {
+    width: 150px;
+    height: 150px;
   }
 }
 

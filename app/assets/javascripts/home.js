@@ -50,8 +50,8 @@ var app = (function (window, document, undefined) {
 
     if (!this.isMobile()) {
       video.addEventListener('loadeddata', function() {
+        $('html').css('overflow-y', 'scroll');
         $(masterOverlay).fadeOut('slow');
-        console.log('okkkk');
       }, false);
     }
   };
