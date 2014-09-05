@@ -689,17 +689,17 @@ html[data-useragent*='iPad'] .main-content > section {
   @extend .cf;
 
   @include media($mobile) {
-    min-height: em(500);
+    min-height: em(400);
   }
 
   @include media($tablet) {
     margin-top: em(50);
-    min-height: em(600);
+    min-height: em(500);
   }
 
   @include media($desktop-x) {
     margin-top: em(40);
-    min-height: em(800);
+    min-height: em(500);
   }
 }
 
