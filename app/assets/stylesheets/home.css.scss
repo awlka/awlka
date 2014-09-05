@@ -645,6 +645,16 @@ html[data-useragent*='iPad'] .main-content > section {
       text-align: left;
       display: inline-block;
     }
+
+    @include media($old-desktop) {
+      position: absolute;
+      top: 15%;
+      right: 0;
+      width: em(400);
+      text-align: left;
+      display: inline-block;
+    }
+
   }
 }
 

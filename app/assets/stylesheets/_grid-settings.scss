@@ -11,6 +11,7 @@ $visual-grid-color: #08c;
 $large-desktop: new-breakpoint(min-width 81em min-height 51em 12);
 $desktop-x: new-breakpoint(min-width 50em min-height 1em 12);
 $desktop: new-breakpoint(min-width 50em 12);
+$old-desktop: new-breakpoint(min-width em(801) max-width em(960) 12);
 
 $tablet: new-breakpoint(min-width 30em max-width 50em 8);
 $mobile: new-breakpoint(max-width 30em 4);
