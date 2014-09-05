@@ -41,18 +41,19 @@ var app = (function (window, document, undefined) {
     };
   };
 
+  /*
+   * Detect when the main video is loaded
+   */
   app.isVideoLoaded = function () {
     var video = $('.the-video')[0];
     var masterOverlay = $('.master-overlay');
-    video.addEventListener('loadeddata', function() {
-      $(masterOverlay).fadeOut('slow');
-      console.log('okkkk');
-    }, false);
-    // if (video.load) {
-    //   console.log('ok');
-    // } else {
-    //   console.log('Not ok!');
-    // }
+
+    if (!this.isMobile()) {
+      video.addEventListener('loadeddata', function() {
+        $(masterOverlay).fadeOut('slow');
+        console.log('okkkk');
+      }, false);
+    }
   };
 
   /*
