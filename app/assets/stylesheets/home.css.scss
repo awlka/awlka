@@ -77,13 +77,15 @@
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: $awlka-black__t;
-  z-index: 2;
+  @include media($desktop-x) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $awlka-black__t;
+    z-index: 2;
+  }
 }
 
 .master-overlay {
@@ -277,15 +279,17 @@
   position: absolute;
   width: em(56);
   height: em(44);
-  @include transition(transform .25s ease-out 0s);
+  @include transition(transform.25s ease-out 0s);
+  @include transform(rotate(0deg));
 }
 
 .nav-toggle__button-close {
-  @include transform(rotate 0deg);
+  @include transform(rotate(0deg));
 }
 
 .nav-toggle__button-open {
   display: none;
+  @include transform(rotate(-180deg));
 }
 
 .site-logo__img {
