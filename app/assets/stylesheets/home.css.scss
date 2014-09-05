@@ -277,17 +277,10 @@
   position: absolute;
   width: em(56);
   height: em(44);
-  @include transition(transform.25s ease-out 0s);
-  @include transform(rotate(0deg));
-}
-
-.nav-toggle__button-close {
-  @include transform(rotate(0deg));
 }
 
 .nav-toggle__button-open {
   display: none;
-  @include transform(rotate(-180deg));
 }
 
 .site-logo__img {
