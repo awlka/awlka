@@ -430,6 +430,10 @@ html[data-useragent*='iPad'] .main-content > section {
     margin: em(80) 0;
   }
 
+  @include media($tablet) {
+    margin: em(80) 0;
+  }
+
   @include media($desktop) {
     @include span-columns(6);
     padding: em(40) 0 0 0;
@@ -521,6 +525,10 @@ html[data-useragent*='iPad'] .main-content > section {
   }
 
   @include media($mobile) {
+    margin-bottom: em(50);
+  }
+
+  @include media($tablet) {
     margin-bottom: em(50);
   }
 
@@ -637,6 +645,12 @@ html[data-useragent*='iPad'] .main-content > section {
       }
     }
 
+    @include media($tablet) {
+      position: relative;
+      top: -10px;
+      text-align: center;
+    }
+
     @include media($desktop-x) {
       position: absolute;
       top: 30%;
@@ -665,11 +679,12 @@ html[data-useragent*='iPad'] .main-content > section {
   display: inline-block;
 
   @include media($mobile) {
-    bottom: em(65);
+    bottom: em(80);
   }
 
   @include media($tablet) {
     bottom: em(70);
+    margin-left: 25%;
   }
 
   @include media($desktop-x) {
