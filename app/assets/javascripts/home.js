@@ -53,6 +53,11 @@ var app = (function (window, document, undefined) {
         $('html').css('overflow-y', 'scroll');
         $(masterOverlay).fadeOut('slow');
       }, false);
+    } else {
+      setTimeout(function () {
+        $('html').css('overflow-y', 'scroll');
+        $(masterOverlay).fadeOut('slow');
+      }, 2000);
     }
   };
 
