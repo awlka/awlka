@@ -18,7 +18,7 @@ var app = (function (window, document, undefined) {
    */
   app.init = function () {
     this.appendVideo();
-    this.isVideoLoaded();
+    // this.isVideoLoaded();
     this.userAgent();
     this.onScrollAnimation();
     this.scrollToFixed();
@@ -44,22 +44,22 @@ var app = (function (window, document, undefined) {
   /*
    * Detect when the main video is loaded
    */
-  app.isVideoLoaded = function () {
-    var video = $('.the-video')[0];
-    var masterOverlay = $('.master-overlay');
+  // app.isVideoLoaded = function () {
+  //   var video = $('.the-video')[0];
+  //   var masterOverlay = $('.master-overlay');
 
-    if (!this.isMobile()) {
-      video.addEventListener('loadeddata', function() {
-        $('html').css('overflow-y', 'scroll');
-        $(masterOverlay).fadeOut('slow');
-      }, false);
-    } else {
-      setTimeout(function () {
-        $('html').css('overflow-y', 'scroll');
-        $(masterOverlay).fadeOut('slow');
-      }, 2000);
-    }
-  };
+  //   if (!this.isMobile()) {
+  //     video.addEventListener('loadeddata', function() {
+  //       $('html').css('overflow-y', 'scroll');
+  //       $(masterOverlay).fadeOut('slow');
+  //     }, false);
+  //   } else {
+  //     setTimeout(function () {
+  //       $('html').css('overflow-y', 'scroll');
+  //       $(masterOverlay).fadeOut('slow');
+  //     }, 2000);
+  //   }
+  // };
 
   /*
    * Detect User Agent
