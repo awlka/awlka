@@ -21,7 +21,7 @@ html {
 
    @include media($desktop-x) {
     font-size: rem(16);
-    overflow-y: hidden;
+    // overflow-y: hidden;
    }
 
    @include media($tablet) {
