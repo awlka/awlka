@@ -10,6 +10,12 @@
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
   <title>AWLKA</title>
 
+  <style type="text/css">
+  <%= raw Rails.application.assets['retreat-hell.css'] %>
+  </style>
+
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+
   <script type="text/javascript">
     WebFontConfig = {
       google: { families: [ 'Open+Sans:400italic,400,300,600:latin' ] }
@@ -24,7 +30,6 @@
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= render 'layouts/favicons' %>
   <%= render 'layouts/meta' %>
   <%= csrf_meta_tags %>
