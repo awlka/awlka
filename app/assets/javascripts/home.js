@@ -35,7 +35,7 @@ var app = (function (window, document, undefined) {
    * Append video on home if isn't Mobile
    */
   app.appendVideo = function () {
-    var theVideo = '<video class="the-video" autoplay loop poster="black-ink.jpg" width="100%" height="100%"><source src="black-ink.webm"></source><source src="black-ink-min.mp4"></source></video>';
+    var theVideo = '<video class="the-video" autoplay loop poster="black-ink.jpg" width="100%" height="100%"><source src="https://s3.amazonaws.com/awlka-assets/black-ink.webm"></source><source src="https://s3.amazonaws.com/awlka-assets/black-ink-min.mp4"></source></video>';
     if (!this.isMobile()) {
       $('.presentation-container__video').append(theVideo);
     };
