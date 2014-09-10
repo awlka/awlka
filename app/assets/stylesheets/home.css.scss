@@ -798,9 +798,6 @@ html[data-useragent*='iPad'] .main-content > section {
   @include transition(all .6s ease-in-out);
   @include transform-style(preserve-3d);
 
-  -ms-transform: perspective(1000px);
-  -moz-transform: perspective(1000px);
-
   @include media($mobile) {
     margin-bottom: 300px;
     &.portfolio-card__flipped {
