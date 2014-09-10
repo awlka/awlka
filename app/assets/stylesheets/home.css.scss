@@ -792,6 +792,8 @@ html[data-useragent*='iPad'] .main-content > section {
   position: relative;
   @include transition(all .6s ease-in-out);
   @include transform-style(preserve-3d);
+
+  -ms-transform: perspective(1000px);
   -moz-transform: perspective(1000px);
 
   @include media($mobile) {
@@ -850,20 +852,12 @@ html[data-useragent*='iPad'] .main-content > section {
   background: $awlka-pink;
   z-index: 2;
   @include transform(rotateY(0deg));
-
-  &:hover {
-    @include transform(rotateY(0deg));
-  }
 }
 
 .portfolio-card__back {
   background: $awlka-black;
   color: $awlka-white;
-  @include transform(rotateY(180deg));
-
-  &:hover {
-    @include transform(rotateY(180deg));
-  }
+  @include transform(rotateY(-180deg));
 }
 
 .portfolio-card__cover {
