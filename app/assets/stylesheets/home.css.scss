@@ -850,12 +850,20 @@ html[data-useragent*='iPad'] .main-content > section {
   background: $awlka-pink;
   z-index: 2;
   @include transform(rotateY(0deg));
+
+  &:hover {
+    @include transform(rotateY(0deg));
+  }
 }
 
 .portfolio-card__back {
   background: $awlka-black;
   color: $awlka-white;
   @include transform(rotateY(180deg));
+
+  &:hover {
+    @include transform(rotateY(180deg));
+  }
 }
 
 .portfolio-card__cover {
