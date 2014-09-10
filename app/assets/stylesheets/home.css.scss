@@ -766,6 +766,11 @@ html[data-useragent*='iPad'] .main-content > section {
   -ms-perspective: 1000;
   @include perspective(1000);
 
+  -ms-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+
   @include media($mobile) {
     position: relative;
     margin-bottom: 300px;
