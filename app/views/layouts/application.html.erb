@@ -16,6 +16,10 @@
 
   <%= stylesheet_link_tag    'application', media: 'all' %>
 
+  <script type="text/javascript" async>
+  <%= raw Rails.application.assets['to-inline.js'] %>
+  </script>
+
   <script type="text/javascript">
     var _bftn_options = { animation: 'banner' }
   </script>
