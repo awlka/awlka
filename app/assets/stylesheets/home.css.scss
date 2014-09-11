@@ -86,52 +86,6 @@
   z-index: 2;
 }
 
-// .master-overlay {
-//   @include media($desktop-x) {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background: $awlka-white;
-//     z-index: 4;
-//   }
-// }
-
-// .master-overlay__content {
-//   @include media($mobile) {
-//     display: none;
-//     visibility: hidden;
-//   }
-
-//   @include media($tablet) {
-//     display: none;
-//     visibility: hidden;
-//   }
-
-//   @include media($desktop) {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     @include transform(translate(-50%, -50%));
-//     text-align: center;
-//     h1 {
-//       font-size: rem(35);
-//       font-weight: 300;
-//       text-transform: uppercase;
-//       color: $awlka-black;
-//     }
-//   }
-// }
-
-// .master-overlay__logo {
-//   margin-bottom: 40px;
-//   svg {
-//     width: 150px;
-//     height: 150px;
-//   }
-// }
-
 .presentation-container {
   position: fixed;
   width: 100%;
