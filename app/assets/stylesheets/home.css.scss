@@ -805,7 +805,6 @@ html[data-useragent*='iPad'] .main-content > section {
 }
 
 .portfolio-card__front {
-  background: $awlka-pink;
   z-index: 2;
   @include transform(rotateY(0deg));
 }
@@ -827,6 +826,12 @@ html[data-useragent*='iPad'] .main-content > section {
 .portfolio-card__savelives {
   .portfolio-card__front {
     background: $savelives-green;
+  }
+}
+
+.portfolio-card__gdgbsi {
+  .portfolio-card__front {
+    background: $catolicasc-red;
   }
 }
 
