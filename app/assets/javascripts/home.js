@@ -6,7 +6,6 @@
 var app = (function (window, document, undefined) {
 
   'use strict';
-
   /*
    * App object
    */
@@ -44,7 +43,7 @@ var app = (function (window, document, undefined) {
   app.onScrollAnimation = function () {
     // Add ScrollReveal in Desktop only!
     if (!this.isMobile()) {
-      window.scrollReveal = new scrollReveal();
+      window.sr = new scrollReveal();
     }
   };
 
