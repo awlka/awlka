@@ -34,19 +34,6 @@ html {
   padding: 0 em(20);
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: $awlka-black;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $awlka-grey;
-  border-radius: 0;
-}
-
 strong {
   font-weight: 700;
 }
